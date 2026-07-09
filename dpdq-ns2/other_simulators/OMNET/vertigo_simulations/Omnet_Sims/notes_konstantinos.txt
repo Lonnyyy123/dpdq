@@ -1,0 +1,42 @@
+============ adding a sim machine ==============
+Run setup.sh in root to install ns-2
+
+
+### Build OMNET itself
+
+sudo apt install -y build-essential flex bison zlib1g-dev libxml2-dev sqlite3 libsqlite3-dev zip unzip
+ 
+sudo apt install -y python3-numpy
+sudo apt-get install -y python3-matplotlib
+
+Problem: /usr/bin/env: 'python': No such file or directory
+Solution: 
+sudo ln -s /usr/bin/python3 /usr/bin/python
+
+wget https://github.com/omnetpp/omnetpp/releases/download/omnetpp-5.6.2/omnetpp-5.6.2-src-linux.tgz
+
+tar xvfz omnetpp-5.6.2-src-linux.tgz
+cd omnetpp-5.6.2/
+. setenv
+
+Add "/home/prasopou/omnetpp-5.6.2/bin" to PATH
+echo "export PATH=$HOME/omnetpp-5.6.2/bin:\$PATH" >> ~/.bashrc
+source ~/.bashrc
+./configure WITH_QTENV=no WITH_OSG=no WITH_OSGEARTH=no
+(check that the path is indeed updated)
+make -j
+
+### Build Shared library
+cd /home/prasopou/nwsim/other_simulators/common/src
+make
+
+### Build Vertigo
+cd /home/prasopou/nwsim/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/inet/src
+make -j
+
+cd /home/prasopou/nwsim/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/dc_simulations/src
+
+opp_makemake -f --deep -KDC_SIMULATIONS_PROJ=.. -DINET_IMPORT -I/home/prasopou/nwsim/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/inet/src -I/home/prasopou/nwsim/other_simulators/common/src -L/home/prasopou/nwsim/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/inet/src -L/home/prasopou/nwsim/other_simulators/common/src -lcommon -lsqlite3 -lINET
+
+(do not commit this makefile (for now))
+make -j 6

@@ -1,0 +1,45 @@
+---
+
+num_hosts: 32
+num_tors: 1
+num_aggr: 0
+host_placement: "uniform"
+leaf_link_speed_gbps: 100
+core_link_speed_gbps: 100
+
+hosts:
+  0: &host
+    tor: 0
+    client: true
+    server: true
+  1: *host
+  2: *host
+  3: *host
+  4: *host
+  5: *host
+  6: *host
+  7: *host
+  8: *host
+  9: *host
+  10: *host
+  11: *host
+  12: *host
+  13: *host
+  14: *host
+  15: *host
+  16: *host
+  17: *host
+  18: *host
+  19: *host
+  20: *host
+  21: *host
+  22: *host
+  23: *host
+  24: *host
+  25: *host
+  26: *host
+  27: *host
+  28: *host
+  29: *host
+  30: *host
+  31: *host

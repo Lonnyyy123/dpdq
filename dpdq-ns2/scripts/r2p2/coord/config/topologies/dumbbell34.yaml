@@ -1,0 +1,52 @@
+---
+
+num_hosts: 34
+num_tors: 2
+num_aggr: 0
+host_placement: "manual"
+leaf_link_speed_gbps: 10
+core_link_speed_gbps: 40
+leaf_link_latency_ms: 0.008
+core_link_latency_ms: 0.01
+
+hosts:
+  0: &tor0
+    tor: 0
+    client: true
+    server: false
+  1: *tor0
+  2: *tor0
+  3: *tor0
+  4: *tor0
+  5: *tor0
+  6: *tor0
+  7: *tor0
+  8: *tor0
+  9: *tor0
+  10: *tor0
+  11: *tor0
+  12: *tor0
+  13: *tor0
+  14: *tor0
+  15: *tor0
+  16: *tor0
+  17: &tor1
+    tor: 1
+    client: false
+    server: true
+  18: *tor1
+  19: *tor1
+  20: *tor1
+  21: *tor1
+  22: *tor1
+  23: *tor1
+  24: *tor1
+  25: *tor1
+  26: *tor1
+  27: *tor1
+  28: *tor1
+  29: *tor1
+  30: *tor1
+  31: *tor1
+  32: *tor1
+  33: *tor1

@@ -1,0 +1,22 @@
+---
+# The defualt, most general topology
+# Two tiers and machines are split evenly among ToRs
+# Traffic is all-to-all
+# Each machine has one client and one server application
+
+# THESE VALUES WILL APPLY UNLESS OVERRIDEN BY THE TOPOLOGY YAML FILE
+# DEFINED IN THE .sh CONFIG SCRIPT
+
+# Assumptions:
+# host can have client or server or (server and client)
+num_hosts: 144
+num_tors: 9
+num_aggr: 4
+num_spines: 0 
+leaf_link_speed_gbps: 40
+core_link_speed_gbps: 40
+# Normally used for prop delay. Will also use to model switch processing latency.
+# ASsuming 0.5us port-to-port latency based on this https://www.mellanox.com/related-docs/prod_eth_switches/PB_SN2410.pdf
+core_link_latency_ms: 0.00075 # applies to links other than host uplinks and downlinks
+leaf_link_latency_ms: 0.001 # applies to host uplinks and downlinks
+host_placement: "uniform"

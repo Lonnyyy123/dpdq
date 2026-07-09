@@ -1,0 +1,26 @@
+---
+
+num_hosts: 4
+num_tors: 2
+num_aggr: 4
+host_placement: "manual"
+leaf_link_speed_gbps: 100
+core_link_speed_gbps: 400
+
+hosts:
+  0:
+    tor: 0
+    client: true
+    server: false
+  1:
+    tor: 0
+    client: true
+    server: true
+  2: 
+    tor: 1
+    client: true
+    server: false
+  3: 
+    tor: 1
+    client: true
+    server: true

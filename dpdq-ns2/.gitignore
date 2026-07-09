@@ -1,0 +1,117 @@
+*.code-workspace
+.ipynb_checkpoints/
+.vscode
+
+# Doxygen
+html/
+latex/
+
+# General
+Makefile
+config.status
+config.log
+__pycache__
+*.tgz
+omnetpp-5.6.2/
+
+# Output files
+*.tr
+*.str
+results/
+run_many_logs/
+
+# ns-2 executables & auto-generated
+*ns-autoconf.tcl
+ns2.34/xgraph-12.1/aclocal.m4
+*autom4te.cache*
+bin/
+!/ns2.34/ns-2.34/bin/
+gen/
+parameter_files/
+example
+minigzip
+wish
+owish
+tcl2c++
+tclsh
+dec-tr-stat
+epa-tr-stat
+calcdest
+libtool
+ctangle
+cweave
+nam
+tclsh8.4
+wish8.4
+tcl2c++
+otclsh
+ptypes2tcl
+tclConfig.sh
+tkConfig.sh
+ucb-tr-stat
+nlanr-tr-stat
+nse
+libtool
+ns2.34/ns-2.34/indep-utils/cmu-scen-gen/setdest
+ns2.34/tclcl-1.19/config.h
+ns2.34/tclcl-1.19/embedded-tcl.cc
+ns2.34/tclcl-1.19/embedded-tclobj.cc
+ns2.34/tclcl-1.19/embedded-tk.cc
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+.cache
+
+.history/
+scripts/r2p2/coord/config/examples/leaf-spine-sird-w4-test.sh
+scripts/r2p2/coord/config/examples/leaf-spine-dpdq-w4-test.sh

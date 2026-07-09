@@ -1,0 +1,15 @@
+#!/bin/bash
+# meant to be run from coord dir ..
+source "config/nsdi25/large-scale-common.default"
+# ===================== Common Parameters =====================
+topology_file_l='eval-2-1.yaml'
+oversub_topo="1"
+
+# 0.563 x non-oversub topology growth
+w3_loads="14 28 34 39 45 48 51 53" 
+w4_loads="14 28 34 39 45 48 51 53"
+w5_loads="14 28 34 39 45 48 51 53"
+
+w3_dur="0.045"
+w4_dur="0.2"
+w5_dur="0.25"

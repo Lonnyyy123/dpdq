@@ -1,0 +1,281 @@
+---
+
+num_hosts: 144
+num_tors: 9
+num_aggr: 4
+host_placement: "uniform"
+leaf_link_speed_gbps: 25
+core_link_speed_gbps: 40
+core_link_latency_ms: 0.001
+leaf_link_latency_ms: 0.001 
+
+hosts:
+  0: &tor0_r2p2_false
+    tor: 0
+    client: true
+    server: false
+    transport: micro-hybrid
+  1: *tor0_r2p2_false
+  2: *tor0_r2p2_false
+  3: *tor0_r2p2_false
+  4: &tor0_r2p2_true
+    tor: 0
+    client: true
+    server: true
+    transport: micro-hybrid
+  5: *tor0_r2p2_true
+  6: *tor0_r2p2_true
+  7: *tor0_r2p2_true
+
+  8: &tor0_dctcp
+    tor: 0
+    client: true
+    server: true
+    transport: dctcp
+  9: *tor0_dctcp
+  10: *tor0_dctcp
+  11: *tor0_dctcp
+  12: *tor0_dctcp
+  13: *tor0_dctcp
+  14: *tor0_dctcp
+  15: *tor0_dctcp
+
+  16: &tor1_r2p2_false
+    tor: 1
+    client: true
+    server: false
+    transport: micro-hybrid
+  17: *tor1_r2p2_false
+  18: *tor1_r2p2_false
+  19: *tor1_r2p2_false
+  20: &tor1_r2p2_true
+    tor: 1
+    client: true
+    server: true
+    transport: micro-hybrid
+  21: *tor1_r2p2_true
+  22: *tor1_r2p2_true
+  23: *tor1_r2p2_true
+
+  24: &tor1_dctcp
+    tor: 1
+    client: true
+    server: true
+    transport: dctcp
+  25: *tor1_dctcp
+  26: *tor1_dctcp
+  27: *tor1_dctcp
+  28: *tor1_dctcp
+  29: *tor1_dctcp
+  30: *tor1_dctcp
+  31: *tor1_dctcp
+
+  32: &tor2_r2p2_false
+    tor: 2
+    client: true
+    server: false
+    transport: micro-hybrid
+  33: *tor2_r2p2_false
+  34: *tor2_r2p2_false
+  35: *tor2_r2p2_false
+  36: &tor2_r2p2_true
+    tor: 2
+    client: true
+    server: true
+    transport: micro-hybrid
+  37: *tor2_r2p2_true
+  38: *tor2_r2p2_true
+  39: *tor2_r2p2_true
+
+  40: &tor2_dctcp
+    tor: 2
+    client: true
+    server: true
+    transport: dctcp
+  41: *tor2_dctcp
+  42: *tor2_dctcp
+  43: *tor2_dctcp
+  44: *tor2_dctcp
+  45: *tor2_dctcp
+  46: *tor2_dctcp
+  47: *tor2_dctcp
+
+  48: &tor3_r2p2_false
+    tor: 3
+    client: true
+    server: false
+    transport: micro-hybrid
+  49: *tor3_r2p2_false
+  50: *tor3_r2p2_false
+  51: *tor3_r2p2_false
+  52: &tor3_r2p2_true
+    tor: 3
+    client: true
+    server: true
+    transport: micro-hybrid
+  53: *tor3_r2p2_true
+  54: *tor3_r2p2_true
+  55: *tor3_r2p2_true
+
+  56: &tor3_dctcp
+    tor: 3
+    client: true
+    server: true
+    transport: dctcp
+  57: *tor3_dctcp
+  58: *tor3_dctcp
+  59: *tor3_dctcp
+  60: *tor3_dctcp
+  61: *tor3_dctcp
+  62: *tor3_dctcp
+  63: *tor3_dctcp
+
+  64: &tor4_r2p2_false
+    tor: 4
+    client: true
+    server: false
+    transport: micro-hybrid
+  65: *tor4_r2p2_false
+  66: *tor4_r2p2_false
+  67: *tor4_r2p2_false
+  68: &tor4_r2p2_true
+    tor: 4
+    client: true
+    server: true
+    transport: micro-hybrid
+  69: *tor4_r2p2_true
+  70: *tor4_r2p2_true
+  71: *tor4_r2p2_true
+
+  72: &tor4_dctcp
+    tor: 4
+    client: true
+    server: true
+    transport: dctcp
+  73: *tor4_dctcp
+  74: *tor4_dctcp
+  75: *tor4_dctcp
+  76: *tor4_dctcp
+  77: *tor4_dctcp
+  78: *tor4_dctcp
+  79: *tor4_dctcp
+
+  80: &tor5_r2p2_false
+    tor: 5
+    client: true
+    server: false
+    transport: micro-hybrid
+  81: *tor5_r2p2_false
+  82: *tor5_r2p2_false
+  83: *tor5_r2p2_false
+  84: &tor5_r2p2_true
+    tor: 5
+    client: true
+    server: true
+    transport: micro-hybrid
+  85: *tor5_r2p2_true
+  86: *tor5_r2p2_true
+  87: *tor5_r2p2_true
+
+  88: &tor5_dctcp
+    tor: 5
+    client: true
+    server: true
+    transport: dctcp
+  89: *tor5_dctcp
+  90: *tor5_dctcp
+  91: *tor5_dctcp
+  92: *tor5_dctcp
+  93: *tor5_dctcp
+  94: *tor5_dctcp
+  95: *tor5_dctcp
+
+  96: &tor6_r2p2_false
+    tor: 6
+    client: true
+    server: false
+    transport: micro-hybrid
+  97: *tor6_r2p2_false
+  98: *tor6_r2p2_false
+  99: *tor6_r2p2_false
+  100: &tor6_r2p2_true
+    tor: 6
+    client: true
+    server: true
+    transport: micro-hybrid
+  101: *tor6_r2p2_true
+  102: *tor6_r2p2_true
+  103: *tor6_r2p2_true
+
+  104: &tor6_dctcp
+    tor: 6
+    client: true
+    server: true
+    transport: dctcp
+  105: *tor6_dctcp
+  106: *tor6_dctcp
+  107: *tor6_dctcp
+  108: *tor6_dctcp
+  109: *tor6_dctcp
+  110: *tor6_dctcp
+  111: *tor6_dctcp
+
+  112: &tor7_r2p2_false
+    tor: 7
+    client: true
+    server: false
+    transport: micro-hybrid
+  113: *tor7_r2p2_false
+  114: *tor7_r2p2_false
+  115: *tor7_r2p2_false
+  116: &tor7_r2p2_true
+    tor: 7
+    client: true
+    server: true
+    transport: micro-hybrid
+  117: *tor7_r2p2_true
+  118: *tor7_r2p2_true
+  119: *tor7_r2p2_true
+
+  120: &tor7_dctcp
+    tor: 7
+    client: true
+    server: true
+    transport: dctcp
+  121: *tor7_dctcp
+  122: *tor7_dctcp
+  123: *tor7_dctcp
+  124: *tor7_dctcp
+  125: *tor7_dctcp
+  126: *tor7_dctcp
+  127: *tor7_dctcp
+
+  128: &tor8_r2p2_false
+    tor: 8
+    client: true
+    server: false
+    transport: micro-hybrid
+  129: *tor8_r2p2_false
+  130: *tor8_r2p2_false
+  131: *tor8_r2p2_false
+  132: &tor8_r2p2_true
+    tor: 8
+    client: true
+    server: true
+    transport: micro-hybrid
+  133: *tor8_r2p2_true
+  134: *tor8_r2p2_true
+  135: *tor8_r2p2_true
+
+  136: &tor8_dctcp
+    tor: 8
+    client: true
+    server: true
+    transport: dctcp
+  137: *tor8_dctcp
+  138: *tor8_dctcp
+  139: *tor8_dctcp
+  140: *tor8_dctcp
+  141: *tor8_dctcp
+  142: *tor8_dctcp
+  143: *tor8_dctcp

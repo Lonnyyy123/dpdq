@@ -1,0 +1,159 @@
+---
+
+num_hosts: 128
+num_tors: 2
+num_aggr: 1
+host_placement: "manual"
+leaf_link_speed_gbps: 40
+core_link_speed_gbps: 100
+
+hosts:
+  # tor0: clients, first 32 hosts use r2p2 (micro-hybrid), next 32 use dctcp
+  0: &tor0_r2p2
+    tor: 0
+    client: true
+    server: false
+    transport: micro-hybrid
+  1: *tor0_r2p2
+  2: *tor0_r2p2
+  3: *tor0_r2p2
+  4: *tor0_r2p2
+  5: *tor0_r2p2
+  6: *tor0_r2p2
+  7: *tor0_r2p2
+  8: *tor0_r2p2
+  9: *tor0_r2p2
+  10: *tor0_r2p2
+  11: *tor0_r2p2
+  12: *tor0_r2p2
+  13: *tor0_r2p2
+  14: *tor0_r2p2
+  15: *tor0_r2p2
+  16: *tor0_r2p2
+  17: *tor0_r2p2
+  18: *tor0_r2p2
+  19: *tor0_r2p2
+  20: *tor0_r2p2
+  21: *tor0_r2p2
+  22: *tor0_r2p2
+  23: *tor0_r2p2
+  24: *tor0_r2p2
+  25: *tor0_r2p2
+  26: *tor0_r2p2
+  27: *tor0_r2p2
+  28: *tor0_r2p2
+  29: *tor0_r2p2
+  30: *tor0_r2p2
+  31: *tor0_r2p2
+
+  32: &tor0_dctcp
+    tor: 0
+    client: true
+    server: false
+    transport: dctcp
+  33: *tor0_dctcp
+  34: *tor0_dctcp
+  35: *tor0_dctcp
+  36: *tor0_dctcp
+  37: *tor0_dctcp
+  38: *tor0_dctcp
+  39: *tor0_dctcp
+  40: *tor0_dctcp
+  41: *tor0_dctcp
+  42: *tor0_dctcp
+  43: *tor0_dctcp
+  44: *tor0_dctcp
+  45: *tor0_dctcp
+  46: *tor0_dctcp
+  47: *tor0_dctcp
+  48: *tor0_dctcp
+  49: *tor0_dctcp
+  50: *tor0_dctcp
+  51: *tor0_dctcp
+  52: *tor0_dctcp
+  53: *tor0_dctcp
+  54: *tor0_dctcp
+  55: *tor0_dctcp
+  56: *tor0_dctcp
+  57: *tor0_dctcp
+  58: *tor0_dctcp
+  59: *tor0_dctcp
+  60: *tor0_dctcp
+  61: *tor0_dctcp
+  62: *tor0_dctcp
+  63: *tor0_dctcp
+
+  # tor1: servers, first 32 hosts use r2p2 (micro-hybrid), next 32 use dctcp
+  64: &tor1_r2p2
+    tor: 1
+    client: false
+    server: true
+    transport: micro-hybrid
+  65: *tor1_r2p2
+  66: *tor1_r2p2
+  67: *tor1_r2p2
+  68: *tor1_r2p2
+  69: *tor1_r2p2
+  70: *tor1_r2p2
+  71: *tor1_r2p2
+  72: *tor1_r2p2
+  73: *tor1_r2p2
+  74: *tor1_r2p2
+  75: *tor1_r2p2
+  76: *tor1_r2p2
+  77: *tor1_r2p2
+  78: *tor1_r2p2
+  79: *tor1_r2p2
+  80: *tor1_r2p2
+  81: *tor1_r2p2
+  82: *tor1_r2p2
+  83: *tor1_r2p2
+  84: *tor1_r2p2
+  85: *tor1_r2p2
+  86: *tor1_r2p2
+  87: *tor1_r2p2
+  88: *tor1_r2p2
+  89: *tor1_r2p2
+  90: *tor1_r2p2
+  91: *tor1_r2p2
+  92: *tor1_r2p2
+  93: *tor1_r2p2
+  94: *tor1_r2p2
+  95: *tor1_r2p2
+
+  96: &tor1_dctcp
+    tor: 1
+    client: false
+    server: true
+    transport: dctcp
+  97: *tor1_dctcp
+  98: *tor1_dctcp
+  99: *tor1_dctcp
+  100: *tor1_dctcp
+  101: *tor1_dctcp
+  102: *tor1_dctcp
+  103: *tor1_dctcp
+  104: *tor1_dctcp
+  105: *tor1_dctcp
+  106: *tor1_dctcp
+  107: *tor1_dctcp
+  108: *tor1_dctcp
+  109: *tor1_dctcp
+  110: *tor1_dctcp
+  111: *tor1_dctcp
+  112: *tor1_dctcp
+  113: *tor1_dctcp
+  114: *tor1_dctcp
+  115: *tor1_dctcp
+  116: *tor1_dctcp
+  117: *tor1_dctcp
+  118: *tor1_dctcp
+  119: *tor1_dctcp
+  120: *tor1_dctcp
+  121: *tor1_dctcp
+  122: *tor1_dctcp
+  123: *tor1_dctcp
+  124: *tor1_dctcp
+  125: *tor1_dctcp
+  126: *tor1_dctcp
+  127: *tor1_dctcp

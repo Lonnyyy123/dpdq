@@ -1,0 +1,31 @@
+# Build artifacts
+build/
+.waf-*
+.lock-waf*
+
+# Python cache / local environments
+**/*.pyc
+__pycache__/
+analysis/__pycache__/
+docker/__pycache__/
+.venv-export/
+
+# Generated runtime state
+.runstate/
+config/generated-exp5/
+
+# Simulation outputs
+logs/
+mix/
+analysis/output/*
+analysis/output/run_logs/
+analysis/tmp/*
+*.log
+
+# Local helper files
+auto_alias
+bgfg_inconfig-*.txt
+
+
+# Local / private tooling
+tools/

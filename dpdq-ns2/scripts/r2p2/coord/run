@@ -1,0 +1,297 @@
+#!/bin/bash
+source "config/common.sh"
+source "util.sh"
+
+usage="usage: ${0} <config_file> <run_simulations? (0,1)> <run_post_proc? (0,1)> <create_timeseries? (0,1)> <create_plots? (0,1)> <delete_current? (0,1)> |\
+		Example: ./run config/n_w3.sh 1 1 0 0 1"
+
+[ $# -eq 6 ] || error $usage
+
+config_file=$1
+do_simulate=$2
+do_post_proc=$3
+create_timeseries=$4
+create_plots=$5
+delete_existing_results=$6
+source "$config_file"
+
+experiment_id_prefix="${config_file%.*}"
+experiment_id_prefix="${experiment_id_prefix##*/}"
+
+root_dir=$(git rev-parse --show-toplevel)
+res_base="${root_dir}/scripts/r2p2/coord/results/${experiment_id_prefix}"
+sim_scripts=${root_dir}/scripts/r2p2/sim-scripts/r2p2cc
+pp_scripts=${root_dir}/scripts/r2p2/post-process
+run_script_path=${root_dir}/scripts/r2p2/coord
+config_file_path=${root_dir}/scripts/r2p2/coord/config
+topolgy_file_path=${root_dir}/scripts/r2p2/coord/config/topologies
+manual_interval_files=${root_dir}/scripts/r2p2/coord/config/manual-req-intervals
+tcl_param_dir=${sim_scripts}/parameter_files
+mkdir -p $tcl_param_dir
+
+vertigo_mac_files="${root_dir}/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/dc_simulations/simulations/Vertigo_Sims/MAC_Table_Data"
+
+function run_sim {
+	prot=$1
+    let rand_id=$RANDOM*$RANDOM
+    experiment_id="${experiment_id_prefix}_${rand_id}_${prot}"
+    check_variable_set $required_params
+    if [ -v sim_file ]; then
+        sim_file="${sim_scripts}/${sim_file}"
+    else
+        sim_file="${sim_scripts}/simulation.tcl"
+    fi
+    params_file="$tcl_param_dir/paramsof-${experiment_id}.tcl"
+    write_tcl_params_to_file $params_file $required_params 
+    python3 topology_parser.py "${topolgy_file_path}/${topology_file}" $params_file
+    [ $? -ne 0 ] && echo "topology_parser.py failed. Exiting..." && exit 1
+    
+	# Calculate some derivative parameters and write them to the file
+	ns "${sim_scripts}/calc_derivative_params.tcl" $params_file
+
+    if [[ "$prot" == *"omnet"* ]]
+    then
+		echo "Starting omnet simulator"
+		common="${root_dir}/other_simulators/OMNET/vertigo_simulations/Omnet_Sims"
+		# placing all .ini files in a flat way to simplify the .ned package (it has to be the same as the directory and it has to be in the same dir as the ini file)
+		ini_file_dir="${common}/dc_simulations/simulations/Vertigo_Sims/config/generated"
+		ini_file="${ini_file_dir}/${experiment_id}.ini"
+    	# Now that the param file is complete, convert it to an .ini file for omnet simulations
+		python3 tcl_to_ini.py $params_file $ini_file_dir
+		# run the omnet simulation
+		src="${common}/dc_simulations/src/dc_simulations"
+		inet="${common}/inet"
+		ned_path_1="${common}/dc_simulations/simulations"
+		ned_path_2="${common}/dc_simulations/simulations/Vertigo_Sims"
+		ned_path_3="${common}/dc_simulations/src"
+		ned_path_4="${inet}/src"
+		ned_path_5="${inet}/examples"
+		ned_path_6="${inet}/tutorials"
+		ned_path_7="${inet}/showcases"
+		images="${inet}/images"
+		inet_lib="${inet}/src/INET"
+
+		config_to_run=""
+		if [[ "$prot" == "omnet-dctcp" ]]
+		then
+			config_to_run="DCTCP_ECMP"
+		elif [[ "$prot" == "omnet-swift" ]]
+		then
+			config_to_run="Swift_ECMP"
+		else
+			echo "Unknown omnet prot $prot. Exiting"
+		fi
+
+		echo "omnet config_to_run $config_to_run"
+
+		# HACK, TODO: FIX. || Before running Omnet, run the ns-2 simulation (without running it), to generate the necessary "parameters" file in results (per-run)
+		param_cmd="ns $sim_file $params_file 0" # 0 means "don't run"
+		echo "Generating result parameters by running ${param_cmd}"
+		$param_cmd
+
+		# "The ini file and the network definition file must be in the same directory" from https://groups.google.com/g/omnetpp/c/Hs8yEercIb0
+		# opp_runall -j1 ../../src/dc_simulations -m -u Cmdenv -c DCTCP_ECMP -n ..:../../src:../../../inet/src:../../../inet/examples:../../../inet/tutorials:../../../inet/showcases --image-path=../../../inet/images -l ../../../inet/src/INET simple_1Gbps_learn.ini
+		# add --debug-statistics-recording=true -> to see which statistcs are enabled in .out
+		cmd="opp_runall -j1 ${src} -m -u Cmdenv -c ${config_to_run} -n ${ned_path_1}:${ned_path_2}:${ned_path_3}:${ned_path_4}:${ned_path_5}:${ned_path_6}:${ned_path_7} --image-path=${images} -l ${inet_lib} ${ini_file}"
+		# cmd="opp_runall -j1 ${src} -m -u Cmdenv -c DCTCP_ECMP -n ${ned_path_1}:${ned_path_2}:${ned_path_3}:${ned_path_4}:${ned_path_5}:${ned_path_6}:${ned_path_7} --image-path=${images} -l ${inet_lib} /home/prasopou/Documents/PhD/R2P2-CC/nwsim/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/dc_simulations/simulations/Vertigo_Sims/config/base.ini"
+    	echo "Executing command: $cmd"
+		$cmd &
+
+		# Copy necessary post processing files
+		extractor_creator_path="${common}/dc_simulations/simulations/Vertigo_Sims"
+		cp "${extractor_creator_path}/extractor_shell_creator.py" "$results_path"
+		cp "${extractor_creator_path}/dir_creator.sh" "$results_path"
+		touch "$results_path/this-is-an-omnet-dir"
+	elif [[ "$prot" == *"dcpim"* ]]
+	then
+		echo "Starting dcPIM simulator"
+		# This appears to have been left incomplete. It only creates a param file.
+		touch "$results_path/this-is-a-dcpim-dir"
+		# HACK, TODO: FIX. || Before running Omnet, run the ns-2 simulation (without running it), to generate the necessary "parameters" file in results (per-run)
+		param_cmd="ns $sim_file $params_file 0" # 0 means "don't run"
+		echo "Generating result parameters by running ${param_cmd}"
+		$param_cmd
+	else
+		echo "Starting ns2 simulator"
+		# cmd="perf record -g -o ${simulation_name_l}.perf.data ns $sim_file $params_file 1"
+		# cmd="gdb --args ns $sim_file $params_file 1"
+		cmd="ns $sim_file $params_file 1"
+    	echo "Starting Sim for $prot"
+    	echo "Executing command: $cmd"
+
+    	$cmd & # default
+    	# $cmd # for gdb
+    fi
+}
+
+snapshot_func() {
+  if ! git -C "$root_dir" config user.name >/dev/null; then
+    git -C "$root_dir" config user.name "Snapshot Bot"
+  fi
+  if ! git -C "$root_dir" config user.email >/dev/null; then
+    git -C "$root_dir" config user.email "snapshot@example.com"
+  fi
+
+  branch="snapshot-$(date +%Y%m%d-%H%M%S-%3N)"
+
+  git_dir=$(cd "$root_dir" && git rev-parse --git-dir)
+  case "$git_dir" in
+    /*) index_path="$git_dir/index" ;;
+    *) index_path="$root_dir/$git_dir/index" ;;
+  esac
+
+  tmp_index="$(mktemp)"
+  cp -f "$index_path" "$tmp_index" 2>/dev/null || true
+
+  (cd "$root_dir" && GIT_INDEX_FILE="$tmp_index" git add -A)
+
+  tree=$(cd "$root_dir" && GIT_INDEX_FILE="$tmp_index" git write-tree)
+
+  parent=$(cd "$root_dir" && git rev-parse -q --verify HEAD 2>/dev/null || true)
+  if [ -n "$parent" ]; then
+    commit=$(printf "Snapshot on %s\n" "$(date -u +'%Y-%m-%d %H:%M:%SZ')" \
+      | (cd "$root_dir" && git commit-tree "$tree" -p "$parent"))
+  else
+    commit=$(printf "Snapshot on %s\n" "$(date -u +'%Y-%m-%d %H:%M:%SZ')" \
+      | (cd "$root_dir" && git commit-tree "$tree"))
+  fi
+
+  (cd "$root_dir" && git branch "$branch" "$commit")
+
+  rm -f "$tmp_index"
+
+  echo "$branch"
+  echo "$commit"
+}
+
+if [[ $delete_existing_results == 1 ]]
+then 
+	read -p "Are you sure you want to delete results dir ${res_base}? (yes/no) " yn
+	case $yn in 
+		yes ) echo "ok, deleting ${res_base}";
+			rm -r $res_base;;
+		no ) echo "ok, keeping the data";;
+		* ) echo "invalid response, keeping the data";;
+	esac
+fi
+
+mkdir -p $res_base
+loads_file=${res_base}/injected_gbps_per_client
+prots_file=${res_base}/prots
+snapshot_file=${res_base}/snapshot_info
+echo "command: $1 $2 $3 $4 $5 $6" > $snapshot_file
+snapshot_func >> "$snapshot_file"
+start_time=$(date)
+declare -a client_injection_rates
+i=0
+touch $loads_file $prots_file
+echo -n "" > $loads_file
+for cl_rate in $client_injection_rate_gbps_list; do
+	client_load=$(bc -l <<< "scale=0; $cl_rate")
+	echo -n "$client_load " >> $loads_file
+	client_injection_rates[$i]=$client_load
+	let "i=i+1"
+done
+echo "" >> $loads_file
+echo $simulation_name_l > $prots_file
+
+
+threads_in_use='0'
+iter=0
+for transp_prot in $transp_prots
+do
+	set_parameters $iter
+	manual_req_interval_file="$manual_interval_files/$manual_req_interval_file"
+	let iter++
+	load_iter=0
+	for client_injection_rate_gbps in $client_injection_rate_gbps_list
+	do
+		echo "====================================================================="
+		loop_path="data/$simulation_name"
+		results_path="$res_base/$loop_path/${client_injection_rates[$load_iter]}"
+		let load_iter++
+		mkdir -p $results_path
+
+		q_mon_results_path="${results_path}/qmon"
+	    if [[ "$transp_prot" != *"omnet"* && "$transp_prot" != *"dcpim"* ]]
+		then
+			# TODO: should be done by code using the dirs, not here
+			mkdir -p "$q_mon_results_path/aggr_tor"
+			mkdir -p "$q_mon_results_path/tor_aggr"
+			mkdir -p "$q_mon_results_path/tor_tor"
+			mkdir -p "$q_mon_results_path/tor_host"
+			mkdir -p "$q_mon_results_path/host_tor"
+		fi
+		echo "Results path: $results_path"
+
+		set_r2p2_cc_scheme $transp_prot
+
+		if [ $do_simulate == '1' ]
+		then
+			run_sim $transp_prot
+			echo "Simul. pid: $!"
+		fi
+
+		let threads_in_use++
+		if [ $threads_in_use == $max_threads ]
+		then
+			wait
+			threads_in_use='0'
+		fi
+	done
+done
+
+wait
+
+aggregate_qmon_tor_aggr_throughput() {
+	local qmon_dir="$1"
+	local area origin_area end_area out_dir out_file
+
+	area="$(basename "$qmon_dir")"
+	origin_area="${area%%_*}"
+	end_area="${area##*_}"
+	out_dir="${qmon_dir%/*}/throughput_all_avg"
+	mkdir -p "$out_dir"
+	out_file="${out_dir}/qts_${origin_area}_all_${end_area}_all.csv"
+
+	shopt -s nullglob
+	local q_files=("${qmon_dir}"/*.q)
+	shopt -u nullglob
+
+	if [ ${#q_files[@]} -eq 0 ]; then
+		echo "No .q files found in ${qmon_dir}; skipping aggregation"
+		return 0
+	fi
+
+	awk 'FNR==1{next}
+		{ts=$1-10; k=sprintf("%.12f",ts); a[k]+=$12; b[k]+=$13}
+		END{for(k in a) printf "%.12f,%.6f,%.6f\n", k, a[k]/36, b[k]/36}' \
+		"${q_files[@]}" \
+		| LC_ALL=C sort -t, -k1,1n \
+		| sed '1i timestamp,dctcp_gbps,ppass_gbps' \
+		> "$out_file"
+}
+
+# Aggregate (sum) last 2 cols by timestamp for tor_aggr and aggr_tor qmon traces.
+for load_dir in "${res_base}/data/${simulation_name}"/*; do
+	[ -d "${load_dir}/qmon/tor_aggr" ] && aggregate_qmon_tor_aggr_throughput "${load_dir}/qmon/tor_aggr"
+	[ -d "${load_dir}/qmon/aggr_tor" ] && aggregate_qmon_tor_aggr_throughput "${load_dir}/qmon/aggr_tor"
+done
+
+if [ $do_post_proc == '1' ]
+then
+	# python3 process_results.py /home/prasopou/scripts/epfl_nas/prasopou/nwsim_results/w5-dcpim-incast/ 0 0
+	args="$res_base $create_timeseries $create_plots"
+	echo "Processing results with arguments: ${args}"
+	python3 ${pp_scripts}/process_results.py ${args}
+    
+    # process dctcp fct
+    echo "process dctcp fct..."
+    data_dir="${res_base}/data/${simulation_name}/${client_injection_rate_gbps_list}"
+    awk '$2=="rrq" && ($3 % 16) >= 8 {print $3 "," $4 "," $8}' ${data_dir}/applications_trace.str > ${data_dir}/dctcp_fct.csv
+fi
+
+finish_time=$(date)
+echo $start_time >> $snapshot_file
+echo $finish_time >> $snapshot_file
+echo "DONE"

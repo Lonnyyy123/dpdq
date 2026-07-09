@@ -1,0 +1,28 @@
+---
+
+num_hosts: 12
+num_tors: 2
+num_aggr: 1
+host_placement: "manual"
+leaf_link_speed_gbps: 10
+core_link_speed_gbps: 100
+
+hosts:
+  0: &tor0
+    tor: 0
+    client: true
+    server: true
+  1: *tor0
+  2: *tor0
+  3: *tor0
+  4: *tor0
+  5: *tor0
+  6: &tor1
+    tor: 1
+    client: true
+    server: true
+  7: *tor1
+  8: *tor1
+  9: *tor1
+  10: *tor1
+  11: *tor1

@@ -1,0 +1,2744 @@
+nohup: 忽略输入
+./run: 第 158 行： read: 读取错误：0: 错误的文件描述符
+invalid response, keeping the data
+=====================================================================
+Results path: /home/lonnie/repos/sird/scripts/r2p2/coord/results/leaf-spine-sird-w4-nofc/data/sird-ls-w4/9.0
+Variable "simulation_name" is set to "sird-ls-w4"
+Variable "root_dir" is set to "/home/lonnie/repos/sird"
+Variable "vertigo_mac_files" is set to "/home/lonnie/repos/sird/other_simulators/OMNET/vertigo_simulations/Omnet_Sims/dc_simulations/simulations/Vertigo_Sims/MAC_Table_Data"
+Variable "experiment_id_prefix" is set to "leaf-spine-sird-w4-nofc"
+Variable "experiment_id" is set to "leaf-spine-sird-w4-nofc_684195663_micro-hybrid"
+Variable "results_path" is set to "/home/lonnie/repos/sird/scripts/r2p2/coord/results/leaf-spine-sird-w4-nofc/data/sird-ls-w4/9.0"
+Variable "transport_protocol" is set to "r2p2"
+Variable "mean_service_time_us" is set to "0.00001"
+Variable "mean_req_size_B" is set to "129297"
+Variable "mean_resp_size_B" is set to "20"
+Variable "req_interval_distr" is set to "exponential"
+Variable "req_target_distr" is set to "uniform"
+Variable "manual_req_interval_file" is set to "/home/lonnie/repos/sird/scripts/r2p2/coord/config/manual-req-intervals/-"
+Variable "resp_proc_time_distr" is set to "exponential"
+Variable "req_size_distr" is set to "w4"
+Variable "resp_size_distr" is set to "fixed"
+Variable "simple_trace_all" is set to "0"
+Variable "trace_r2p2_layer_cl" is set to "0"
+Variable "trace_r2p2_layer_sr" is set to "0"
+Variable "trace_router" is set to "0"
+Variable "trace_application" is set to "1"
+Variable "trace_cc" is set to "1"
+Variable "general_queue_size" is set to "106"
+Variable "r2p2_cc_scheme" is set to "micro-hybrid"
+Variable "cc_pkt_cap_sr_thresh" is set to "25"
+Variable "router_latency_us" is set to "0.01"
+Variable "queue_size_pfab" is set to "54"
+Variable "tcp_connections_per_thread_pair" is set to "1"
+Variable "pfab_g" is set to "0.0625"
+Variable "pfab_K" is set to "10000"
+Variable "pfab_min_rto" is set to "0.000024"
+Variable "client_injection_rate_gbps" is set to "9.0"
+Variable "router_op_mode" is set to "random"
+Variable "duration_modifier" is set to "0.027"
+Variable "lognormal_sigma" is set to "1.8"
+Variable "state_polling_ival_s" is set to "0.000008"
+Variable "q_mon_results_path" is set to "/home/lonnie/repos/sird/scripts/r2p2/coord/results/leaf-spine-sird-w4-nofc/data/sird-ls-w4/9.0/qmon"
+Variable "urpc_sz_bytes" is set to "1500"
+Variable "single_path_per_msg" is set to "0"
+Variable "dctcp_g" is set to "0.08"
+Variable "dctcp_K" is set to "6"
+Variable "dctcp_min_rto" is set to "0.000200"
+Variable "dctcp_init_cwnd" is set to "5"
+Variable "tcp_ack_ratio" is set to "1"
+Variable "r2p2_host_uplink_prio" is set to "1"
+Variable "r2p2_busy_thresh_us" is set to "8"
+Variable "r2p2_idle_thresh_us" is set to "8"
+Variable "r2p2_throttle_mul" is set to "1.0"
+Variable "r2p2_boost_mul" is set to "1.0"
+Variable "r2p2_pace_uplink" is set to "0"
+Variable "grant_gap_ns" is set to "0"
+Variable "r2p2_uplink_deque_policy" is set to "0"
+Variable "traffic_matrix_type" is set to "uniform"
+Variable "traffic_matrix_ratio_interrack" is set to "0.8"
+Variable "r2p2_budgets_intra_max_bytes" is set to "243750"
+Variable "r2p2_ecn_at_core" is set to "1"
+Variable "r2p2_ecn_threshold_min" is set to "6"
+Variable "drop_tail_num_prios" is set to "8"
+Variable "r2p2_ecn_threshold_max" is set to "6"
+Variable "r2p2_pace_grants" is set to "1"
+Variable "r2p2_ce_new_weight" is set to "0.08"
+Variable "r2p2_ecn_mechanism_influence" is set to "1.0"
+Variable "r2p2_ecn_init_slash_mul" is set to "0.5"
+Variable "r2p2_ecn_min_mul" is set to "0.1"
+Variable "r2p2_ecn_min_mul_nw" is set to "0.03"
+Variable "r2p2_pooled_sender_credit_bytes" is set to "400000"
+Variable "r2p2_sender_budget_pooled" is set to "1"
+Variable "r2p2_elet_srpb" is set to "162500"
+Variable "r2p2_elet_receiver_policy" is set to "0"
+Variable "r2p2_elet_account_unsched" is set to "1"
+Variable "r2p2_unsolicited_thresh_bytes" is set to "162500"
+Variable "r2p2_unsolicited_limit_senders" is set to "0"
+Variable "r2p2_unsolicited_burst_when_idle" is set to "0"
+Variable "capture_pkt_trace" is set to "0"
+Variable "homa_rtt_bytes" is set to "100000"
+Variable "homa_grant_max_bytes" is set to "1472"
+Variable "homa_all_prio" is set to "8"
+Variable "homa_adaptive_sched_prio_levels" is set to "7"
+Variable "homa_account_for_grant_traffic" is set to "1"
+Variable "homa_unsched_prio_usage_weight" is set to "1"
+Variable "homa_is_round_robin_scheduler" is set to "0"
+Variable "homa_link_check_bytes" is set to "-1"
+Variable "homa_default_req_bytes" is set to "1442"
+Variable "homa_boost_tail_bytes_prio" is set to "0"
+Variable "homa_use_unsch_rate_in_scheduler" is set to "0"
+Variable "global_debug" is set to "1"
+Variable "app_debug" is set to "2"
+Variable "full_tcp_debug" is set to "2"
+Variable "r2p2_tranport_debug" is set to "2"
+Variable "r2p2_udp_debug" is set to "2"
+Variable "r2p2_router_debug" is set to "2"
+Variable "r2p2_cc_debug" is set to "2"
+Variable "homa_transport_debug" is set to "2"
+Variable "homa_udp_debug" is set to "2"
+Variable "r2p2_sender_ecn_threshold" is set to "542"
+Variable "homa_workload_type" is set to "5"
+Variable "homa_in_network_prios" is set to "1"
+Variable "load_pattern" is set to "fixed"
+Variable "lp_period" is set to "0.002"
+Variable "lp_step_high_ratio" is set to "0.5"
+Variable "lp_high_value_mul" is set to "1.8"
+Variable "lp_low_value_mul" is set to "0.2"
+Variable "homa_default_unsched_bytes" is set to "98558"
+Variable "r2p2_hybrid_reset_after_x_rtt" is set to "-1"
+Variable "r2p2_hybrid_pace_grants" is set to "1"
+Variable "r2p2_hybrid_additive_incr_mul" is set to "1"
+Variable "r2p2_hybrid_sender_policy" is set to "0"
+Variable "r2p2_hybrid_sender_algo" is set to "0"
+Variable "r2p2_hybrid_in_network_prios" is set to "1"
+Variable "trace_last_ratio" is set to "1.0"
+Variable "capture_msg_trace" is set to "0"
+Variable "r2p2_hybrid_eta" is set to "1.5"
+Variable "r2p2_hybrid_wai" is set to "1550"
+Variable "r2p2_hybrid_max_stage" is set to "1"
+Variable "switch_queue_type" is set to "per-port"
+Variable "r2p2_priority_flow" is set to "0"
+Variable "r2p2_data_prio" is set to "1"
+Variable "r2p2_sender_policy_ratio" is set to "0"
+Variable "swift_base_target_delay" is set to "0.0000150"
+Variable "swift_max_scaling_range" is set to "0.0000750"
+Variable "swift_per_hop_scaling_factor" is set to "0.000001"
+Variable "swift_max_cwnd_target_scaling" is set to "100"
+Variable "swift_min_cwnd_target_scaling" is set to "0.1"
+Variable "swift_additive_increase_constant" is set to "1"
+Variable "swift_multiplicative_decrease_constant" is set to "0.8"
+Variable "swift_max_mdf" is set to "0.5"
+Variable "oversub_topo" is set to "0"
+Variable "incast_workload_ratio" is set to "0.0"
+Variable "incast_size" is set to "30"
+Variable "incast_request_size_bytes" is set to "500000"
+Variable "udp_ecn_thresh" is set to "81250"
+Variable "tcp_ecn_thresh" is set to "-1"
+Variable "dpdq_xoff_bytes" is set to "159500000"
+Variable "dpdq_xon_bytes" is set to "156500000"
+Variable "r2p2_resend_timeout_s" is set to "0.004"
+Number of parameters: 135
+Writing them to /home/lonnie/repos/sird/scripts/r2p2/sim-scripts/r2p2cc/parameter_files/paramsof-leaf-spine-sird-w4-nofc_684195663_micro-hybrid.tcl
+num_hosts -> 144
+num_tors -> 9
+num_aggr -> 4
+num_spines -> 0
+leaf_link_speed_gbps -> 25
+core_link_speed_gbps -> 40
+core_link_latency_ms -> 0.008
+leaf_link_latency_ms -> 0.005
+host_placement -> uniform
+hosts -> {0: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 1: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 2: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 3: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 4: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 5: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 6: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 7: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 8: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 9: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 10: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 11: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 12: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 13: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 14: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 15: {'tor': 0, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 16: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 17: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 18: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 19: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 20: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 21: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 22: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 23: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 24: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 25: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 26: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 27: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 28: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 29: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 30: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 31: {'tor': 1, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 32: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 33: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 34: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 35: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 36: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 37: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 38: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 39: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 40: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 41: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 42: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 43: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 44: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 45: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 46: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 47: {'tor': 2, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 48: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 49: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 50: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 51: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 52: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 53: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 54: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 55: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 56: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 57: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 58: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 59: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 60: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 61: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 62: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 63: {'tor': 3, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 64: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 65: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 66: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 67: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 68: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 69: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 70: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 71: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 72: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 73: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 74: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 75: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 76: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 77: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 78: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 79: {'tor': 4, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 80: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 81: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 82: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 83: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 84: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 85: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 86: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 87: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 88: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 89: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 90: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 91: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 92: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 93: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 94: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 95: {'tor': 5, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 96: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 97: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 98: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 99: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 100: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 101: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 102: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 103: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 104: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 105: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 106: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 107: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 108: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 109: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 110: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 111: {'tor': 6, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 112: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 113: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 114: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 115: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 116: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 117: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 118: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 119: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 120: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 121: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 122: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 123: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 124: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 125: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 126: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 127: {'tor': 7, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 128: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 129: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 130: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 131: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 132: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 133: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 134: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 135: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 136: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 137: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 138: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 139: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 140: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 141: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 142: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}, 143: {'tor': 8, 'client': True, 'server': True, 'transport': 'micro-hybrid'}}
+total_client_downlink_cap_gbps 3600.0
+total_server_downlink_cap_gbps 3600.0
+client_injection_rate_gbps 9.0
+background_injection_rate_gbps 9.0
+total_background_injection_rate_gbps 1296.0
+total_incast_injection_rate_gbps 0.0
+mean_per_client_req_interval_us 114.93066666666668
+mean_per_client_req_interval_s 0.00011493066666666668
+mean_incast_interval_s 0
+global_req_send_rate_rps 1252929.3023039976
+global_resp_send_rate_rps 1252929.3023039976
+per_client_req_send_rate_rps 8700.8979326666504
+per_server_resp_send_rate_rps 8700.8979326666504
+estimated estim_send_rate_per_client_gbps_bgrnd 9.0
+estimated send_rate_per_server_gbps_bgrnd 0.0013921436692266641
+total_cl_send_rate_gbps 1296.0
+total_sr_send_rate_gbps 0.20046868836863962
+Writing parameter file after calculating derivative parameters
+/home/lonnie/repos/sird/scripts/r2p2/sim-scripts/r2p2cc/parameter_files/paramsof-leaf-spine-sird-w4-nofc_684195663_micro-hybrid.tcl
+Starting ns2 simulator
+Starting Sim for micro-hybrid
+Executing command: ns /home/lonnie/repos/sird/scripts/r2p2/sim-scripts/r2p2cc/simulation.tcl /home/lonnie/repos/sird/scripts/r2p2/sim-scripts/r2p2cc/parameter_files/paramsof-leaf-spine-sird-w4-nofc_684195663_micro-hybrid.tcl 1
+Simul. pid: 584564
+Num hosts/clients/servers 144/144/144
+Interval between requests per client: 114.93066666666668 us
+Reqs per sec per client: 8700.8979326666504 rps
+Capacity per sec per server: 99999999999.999985 rps
+Reqs per sec: 1252929.3023039976 rps
+Server Capacity per sec: 14399999999999.998 rps
+Estimated sending rate per client: 9.0 Gbps
+Total req rate: 1296.0 Gbps
+core_link_speed_gbps: 40 Gbps
+---------
+Approx app load = 8.7008979326666519e-06 %
+approx_leaves_load = 36.005568574676907 %
+Approx req nwrk load at leaves = 36.0 %
+Approx reply nwrk load at leaves = 0.0055685746769066563 %
+Approx max req nwrk load at core = 810.0 %
+Approx max reply nwrk load at core = 0.12529293023039978 %
+Simulation Duration = 0.074999999999999997 seconds
+<<^^>>
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+warning: no class variable Classifier/Hash/Dest::id_
+
+	see tcl-object.tcl in tclcl for info about this warning.
+
+warning: no class variable Classifier/Hash/Dest::xoff_bytes_
+
+warning: no class variable Classifier/Hash/Dest::xon_bytes_
+
+(r2p2) Attaching agent pointing to 16 to host 0
+(r2p2) Attaching agent pointing to 32 to host 0
+(r2p2) Attaching agent pointing to 48 to host 0
+(r2p2) Attaching agent pointing to 64 to host 0
+(r2p2) Attaching agent pointing to 80 to host 0
+(r2p2) Attaching agent pointing to 96 to host 0
+(r2p2) Attaching agent pointing to 112 to host 0
+(r2p2) Attaching agent pointing to 128 to host 0
+(r2p2) Attaching agent pointing to 17 to host 1
+(r2p2) Attaching agent pointing to 33 to host 1
+(r2p2) Attaching agent pointing to 49 to host 1
+(r2p2) Attaching agent pointing to 65 to host 1
+(r2p2) Attaching agent pointing to 81 to host 1
+(r2p2) Attaching agent pointing to 97 to host 1
+(r2p2) Attaching agent pointing to 113 to host 1
+(r2p2) Attaching agent pointing to 129 to host 1
+(r2p2) Attaching agent pointing to 18 to host 2
+(r2p2) Attaching agent pointing to 34 to host 2
+(r2p2) Attaching agent pointing to 50 to host 2
+(r2p2) Attaching agent pointing to 66 to host 2
+(r2p2) Attaching agent pointing to 82 to host 2
+(r2p2) Attaching agent pointing to 98 to host 2
+(r2p2) Attaching agent pointing to 114 to host 2
+(r2p2) Attaching agent pointing to 130 to host 2
+(r2p2) Attaching agent pointing to 19 to host 3
+(r2p2) Attaching agent pointing to 35 to host 3
+(r2p2) Attaching agent pointing to 51 to host 3
+(r2p2) Attaching agent pointing to 67 to host 3
+(r2p2) Attaching agent pointing to 83 to host 3
+(r2p2) Attaching agent pointing to 99 to host 3
+(r2p2) Attaching agent pointing to 115 to host 3
+(r2p2) Attaching agent pointing to 131 to host 3
+(r2p2) Attaching agent pointing to 20 to host 4
+(r2p2) Attaching agent pointing to 36 to host 4
+(r2p2) Attaching agent pointing to 52 to host 4
+(r2p2) Attaching agent pointing to 68 to host 4
+(r2p2) Attaching agent pointing to 84 to host 4
+(r2p2) Attaching agent pointing to 100 to host 4
+(r2p2) Attaching agent pointing to 116 to host 4
+(r2p2) Attaching agent pointing to 132 to host 4
+(r2p2) Attaching agent pointing to 21 to host 5
+(r2p2) Attaching agent pointing to 37 to host 5
+(r2p2) Attaching agent pointing to 53 to host 5
+(r2p2) Attaching agent pointing to 69 to host 5
+(r2p2) Attaching agent pointing to 85 to host 5
+(r2p2) Attaching agent pointing to 101 to host 5
+(r2p2) Attaching agent pointing to 117 to host 5
+(r2p2) Attaching agent pointing to 133 to host 5
+(r2p2) Attaching agent pointing to 22 to host 6
+(r2p2) Attaching agent pointing to 38 to host 6
+(r2p2) Attaching agent pointing to 54 to host 6
+(r2p2) Attaching agent pointing to 70 to host 6
+(r2p2) Attaching agent pointing to 86 to host 6
+(r2p2) Attaching agent pointing to 102 to host 6
+(r2p2) Attaching agent pointing to 118 to host 6
+(r2p2) Attaching agent pointing to 134 to host 6
+(r2p2) Attaching agent pointing to 23 to host 7
+(r2p2) Attaching agent pointing to 39 to host 7
+(r2p2) Attaching agent pointing to 55 to host 7
+(r2p2) Attaching agent pointing to 71 to host 7
+(r2p2) Attaching agent pointing to 87 to host 7
+(r2p2) Attaching agent pointing to 103 to host 7
+(r2p2) Attaching agent pointing to 119 to host 7
+(r2p2) Attaching agent pointing to 135 to host 7
+(r2p2) Attaching agent pointing to 24 to host 8
+(r2p2) Attaching agent pointing to 40 to host 8
+(r2p2) Attaching agent pointing to 56 to host 8
+(r2p2) Attaching agent pointing to 72 to host 8
+(r2p2) Attaching agent pointing to 88 to host 8
+(r2p2) Attaching agent pointing to 104 to host 8
+(r2p2) Attaching agent pointing to 120 to host 8
+(r2p2) Attaching agent pointing to 136 to host 8
+(r2p2) Attaching agent pointing to 25 to host 9
+(r2p2) Attaching agent pointing to 41 to host 9
+(r2p2) Attaching agent pointing to 57 to host 9
+(r2p2) Attaching agent pointing to 73 to host 9
+(r2p2) Attaching agent pointing to 89 to host 9
+(r2p2) Attaching agent pointing to 105 to host 9
+(r2p2) Attaching agent pointing to 121 to host 9
+(r2p2) Attaching agent pointing to 137 to host 9
+(r2p2) Attaching agent pointing to 26 to host 10
+(r2p2) Attaching agent pointing to 42 to host 10
+(r2p2) Attaching agent pointing to 58 to host 10
+(r2p2) Attaching agent pointing to 74 to host 10
+(r2p2) Attaching agent pointing to 90 to host 10
+(r2p2) Attaching agent pointing to 106 to host 10
+(r2p2) Attaching agent pointing to 122 to host 10
+(r2p2) Attaching agent pointing to 138 to host 10
+(r2p2) Attaching agent pointing to 27 to host 11
+(r2p2) Attaching agent pointing to 43 to host 11
+(r2p2) Attaching agent pointing to 59 to host 11
+(r2p2) Attaching agent pointing to 75 to host 11
+(r2p2) Attaching agent pointing to 91 to host 11
+(r2p2) Attaching agent pointing to 107 to host 11
+(r2p2) Attaching agent pointing to 123 to host 11
+(r2p2) Attaching agent pointing to 139 to host 11
+(r2p2) Attaching agent pointing to 28 to host 12
+(r2p2) Attaching agent pointing to 44 to host 12
+(r2p2) Attaching agent pointing to 60 to host 12
+(r2p2) Attaching agent pointing to 76 to host 12
+(r2p2) Attaching agent pointing to 92 to host 12
+(r2p2) Attaching agent pointing to 108 to host 12
+(r2p2) Attaching agent pointing to 124 to host 12
+(r2p2) Attaching agent pointing to 140 to host 12
+(r2p2) Attaching agent pointing to 29 to host 13
+(r2p2) Attaching agent pointing to 45 to host 13
+(r2p2) Attaching agent pointing to 61 to host 13
+(r2p2) Attaching agent pointing to 77 to host 13
+(r2p2) Attaching agent pointing to 93 to host 13
+(r2p2) Attaching agent pointing to 109 to host 13
+(r2p2) Attaching agent pointing to 125 to host 13
+(r2p2) Attaching agent pointing to 141 to host 13
+(r2p2) Attaching agent pointing to 30 to host 14
+(r2p2) Attaching agent pointing to 46 to host 14
+(r2p2) Attaching agent pointing to 62 to host 14
+(r2p2) Attaching agent pointing to 78 to host 14
+(r2p2) Attaching agent pointing to 94 to host 14
+(r2p2) Attaching agent pointing to 110 to host 14
+(r2p2) Attaching agent pointing to 126 to host 14
+(r2p2) Attaching agent pointing to 142 to host 14
+(r2p2) Attaching agent pointing to 31 to host 15
+(r2p2) Attaching agent pointing to 47 to host 15
+(r2p2) Attaching agent pointing to 63 to host 15
+(r2p2) Attaching agent pointing to 79 to host 15
+(r2p2) Attaching agent pointing to 95 to host 15
+(r2p2) Attaching agent pointing to 111 to host 15
+(r2p2) Attaching agent pointing to 127 to host 15
+(r2p2) Attaching agent pointing to 143 to host 15
+(r2p2) Attaching agent pointing to 0 to host 16
+(r2p2) Attaching agent pointing to 32 to host 16
+(r2p2) Attaching agent pointing to 48 to host 16
+(r2p2) Attaching agent pointing to 64 to host 16
+(r2p2) Attaching agent pointing to 80 to host 16
+(r2p2) Attaching agent pointing to 96 to host 16
+(r2p2) Attaching agent pointing to 112 to host 16
+(r2p2) Attaching agent pointing to 128 to host 16
+(r2p2) Attaching agent pointing to 1 to host 17
+(r2p2) Attaching agent pointing to 33 to host 17
+(r2p2) Attaching agent pointing to 49 to host 17
+(r2p2) Attaching agent pointing to 65 to host 17
+(r2p2) Attaching agent pointing to 81 to host 17
+(r2p2) Attaching agent pointing to 97 to host 17
+(r2p2) Attaching agent pointing to 113 to host 17
+(r2p2) Attaching agent pointing to 129 to host 17
+(r2p2) Attaching agent pointing to 2 to host 18
+(r2p2) Attaching agent pointing to 34 to host 18
+(r2p2) Attaching agent pointing to 50 to host 18
+(r2p2) Attaching agent pointing to 66 to host 18
+(r2p2) Attaching agent pointing to 82 to host 18
+(r2p2) Attaching agent pointing to 98 to host 18
+(r2p2) Attaching agent pointing to 114 to host 18
+(r2p2) Attaching agent pointing to 130 to host 18
+(r2p2) Attaching agent pointing to 3 to host 19
+(r2p2) Attaching agent pointing to 35 to host 19
+(r2p2) Attaching agent pointing to 51 to host 19
+(r2p2) Attaching agent pointing to 67 to host 19
+(r2p2) Attaching agent pointing to 83 to host 19
+(r2p2) Attaching agent pointing to 99 to host 19
+(r2p2) Attaching agent pointing to 115 to host 19
+(r2p2) Attaching agent pointing to 131 to host 19
+(r2p2) Attaching agent pointing to 4 to host 20
+(r2p2) Attaching agent pointing to 36 to host 20
+(r2p2) Attaching agent pointing to 52 to host 20
+(r2p2) Attaching agent pointing to 68 to host 20
+(r2p2) Attaching agent pointing to 84 to host 20
+(r2p2) Attaching agent pointing to 100 to host 20
+(r2p2) Attaching agent pointing to 116 to host 20
+(r2p2) Attaching agent pointing to 132 to host 20
+(r2p2) Attaching agent pointing to 5 to host 21
+(r2p2) Attaching agent pointing to 37 to host 21
+(r2p2) Attaching agent pointing to 53 to host 21
+(r2p2) Attaching agent pointing to 69 to host 21
+(r2p2) Attaching agent pointing to 85 to host 21
+(r2p2) Attaching agent pointing to 101 to host 21
+(r2p2) Attaching agent pointing to 117 to host 21
+(r2p2) Attaching agent pointing to 133 to host 21
+(r2p2) Attaching agent pointing to 6 to host 22
+(r2p2) Attaching agent pointing to 38 to host 22
+(r2p2) Attaching agent pointing to 54 to host 22
+(r2p2) Attaching agent pointing to 70 to host 22
+(r2p2) Attaching agent pointing to 86 to host 22
+(r2p2) Attaching agent pointing to 102 to host 22
+(r2p2) Attaching agent pointing to 118 to host 22
+(r2p2) Attaching agent pointing to 134 to host 22
+(r2p2) Attaching agent pointing to 7 to host 23
+(r2p2) Attaching agent pointing to 39 to host 23
+(r2p2) Attaching agent pointing to 55 to host 23
+(r2p2) Attaching agent pointing to 71 to host 23
+(r2p2) Attaching agent pointing to 87 to host 23
+(r2p2) Attaching agent pointing to 103 to host 23
+(r2p2) Attaching agent pointing to 119 to host 23
+(r2p2) Attaching agent pointing to 135 to host 23
+(r2p2) Attaching agent pointing to 8 to host 24
+(r2p2) Attaching agent pointing to 40 to host 24
+(r2p2) Attaching agent pointing to 56 to host 24
+(r2p2) Attaching agent pointing to 72 to host 24
+(r2p2) Attaching agent pointing to 88 to host 24
+(r2p2) Attaching agent pointing to 104 to host 24
+(r2p2) Attaching agent pointing to 120 to host 24
+(r2p2) Attaching agent pointing to 136 to host 24
+(r2p2) Attaching agent pointing to 9 to host 25
+(r2p2) Attaching agent pointing to 41 to host 25
+(r2p2) Attaching agent pointing to 57 to host 25
+(r2p2) Attaching agent pointing to 73 to host 25
+(r2p2) Attaching agent pointing to 89 to host 25
+(r2p2) Attaching agent pointing to 105 to host 25
+(r2p2) Attaching agent pointing to 121 to host 25
+(r2p2) Attaching agent pointing to 137 to host 25
+(r2p2) Attaching agent pointing to 10 to host 26
+(r2p2) Attaching agent pointing to 42 to host 26
+(r2p2) Attaching agent pointing to 58 to host 26
+(r2p2) Attaching agent pointing to 74 to host 26
+(r2p2) Attaching agent pointing to 90 to host 26
+(r2p2) Attaching agent pointing to 106 to host 26
+(r2p2) Attaching agent pointing to 122 to host 26
+(r2p2) Attaching agent pointing to 138 to host 26
+(r2p2) Attaching agent pointing to 11 to host 27
+(r2p2) Attaching agent pointing to 43 to host 27
+(r2p2) Attaching agent pointing to 59 to host 27
+(r2p2) Attaching agent pointing to 75 to host 27
+(r2p2) Attaching agent pointing to 91 to host 27
+(r2p2) Attaching agent pointing to 107 to host 27
+(r2p2) Attaching agent pointing to 123 to host 27
+(r2p2) Attaching agent pointing to 139 to host 27
+(r2p2) Attaching agent pointing to 12 to host 28
+(r2p2) Attaching agent pointing to 44 to host 28
+(r2p2) Attaching agent pointing to 60 to host 28
+(r2p2) Attaching agent pointing to 76 to host 28
+(r2p2) Attaching agent pointing to 92 to host 28
+(r2p2) Attaching agent pointing to 108 to host 28
+(r2p2) Attaching agent pointing to 124 to host 28
+(r2p2) Attaching agent pointing to 140 to host 28
+(r2p2) Attaching agent pointing to 13 to host 29
+(r2p2) Attaching agent pointing to 45 to host 29
+(r2p2) Attaching agent pointing to 61 to host 29
+(r2p2) Attaching agent pointing to 77 to host 29
+(r2p2) Attaching agent pointing to 93 to host 29
+(r2p2) Attaching agent pointing to 109 to host 29
+(r2p2) Attaching agent pointing to 125 to host 29
+(r2p2) Attaching agent pointing to 141 to host 29
+(r2p2) Attaching agent pointing to 14 to host 30
+(r2p2) Attaching agent pointing to 46 to host 30
+(r2p2) Attaching agent pointing to 62 to host 30
+(r2p2) Attaching agent pointing to 78 to host 30
+(r2p2) Attaching agent pointing to 94 to host 30
+(r2p2) Attaching agent pointing to 110 to host 30
+(r2p2) Attaching agent pointing to 126 to host 30
+(r2p2) Attaching agent pointing to 142 to host 30
+(r2p2) Attaching agent pointing to 15 to host 31
+(r2p2) Attaching agent pointing to 47 to host 31
+(r2p2) Attaching agent pointing to 63 to host 31
+(r2p2) Attaching agent pointing to 79 to host 31
+(r2p2) Attaching agent pointing to 95 to host 31
+(r2p2) Attaching agent pointing to 111 to host 31
+(r2p2) Attaching agent pointing to 127 to host 31
+(r2p2) Attaching agent pointing to 143 to host 31
+(r2p2) Attaching agent pointing to 0 to host 32
+(r2p2) Attaching agent pointing to 16 to host 32
+(r2p2) Attaching agent pointing to 48 to host 32
+(r2p2) Attaching agent pointing to 64 to host 32
+(r2p2) Attaching agent pointing to 80 to host 32
+(r2p2) Attaching agent pointing to 96 to host 32
+(r2p2) Attaching agent pointing to 112 to host 32
+(r2p2) Attaching agent pointing to 128 to host 32
+(r2p2) Attaching agent pointing to 1 to host 33
+(r2p2) Attaching agent pointing to 17 to host 33
+(r2p2) Attaching agent pointing to 49 to host 33
+(r2p2) Attaching agent pointing to 65 to host 33
+(r2p2) Attaching agent pointing to 81 to host 33
+(r2p2) Attaching agent pointing to 97 to host 33
+(r2p2) Attaching agent pointing to 113 to host 33
+(r2p2) Attaching agent pointing to 129 to host 33
+(r2p2) Attaching agent pointing to 2 to host 34
+(r2p2) Attaching agent pointing to 18 to host 34
+(r2p2) Attaching agent pointing to 50 to host 34
+(r2p2) Attaching agent pointing to 66 to host 34
+(r2p2) Attaching agent pointing to 82 to host 34
+(r2p2) Attaching agent pointing to 98 to host 34
+(r2p2) Attaching agent pointing to 114 to host 34
+(r2p2) Attaching agent pointing to 130 to host 34
+(r2p2) Attaching agent pointing to 3 to host 35
+(r2p2) Attaching agent pointing to 19 to host 35
+(r2p2) Attaching agent pointing to 51 to host 35
+(r2p2) Attaching agent pointing to 67 to host 35
+(r2p2) Attaching agent pointing to 83 to host 35
+(r2p2) Attaching agent pointing to 99 to host 35
+(r2p2) Attaching agent pointing to 115 to host 35
+(r2p2) Attaching agent pointing to 131 to host 35
+(r2p2) Attaching agent pointing to 4 to host 36
+(r2p2) Attaching agent pointing to 20 to host 36
+(r2p2) Attaching agent pointing to 52 to host 36
+(r2p2) Attaching agent pointing to 68 to host 36
+(r2p2) Attaching agent pointing to 84 to host 36
+(r2p2) Attaching agent pointing to 100 to host 36
+(r2p2) Attaching agent pointing to 116 to host 36
+(r2p2) Attaching agent pointing to 132 to host 36
+(r2p2) Attaching agent pointing to 5 to host 37
+(r2p2) Attaching agent pointing to 21 to host 37
+(r2p2) Attaching agent pointing to 53 to host 37
+(r2p2) Attaching agent pointing to 69 to host 37
+(r2p2) Attaching agent pointing to 85 to host 37
+(r2p2) Attaching agent pointing to 101 to host 37
+(r2p2) Attaching agent pointing to 117 to host 37
+(r2p2) Attaching agent pointing to 133 to host 37
+(r2p2) Attaching agent pointing to 6 to host 38
+(r2p2) Attaching agent pointing to 22 to host 38
+(r2p2) Attaching agent pointing to 54 to host 38
+(r2p2) Attaching agent pointing to 70 to host 38
+(r2p2) Attaching agent pointing to 86 to host 38
+(r2p2) Attaching agent pointing to 102 to host 38
+(r2p2) Attaching agent pointing to 118 to host 38
+(r2p2) Attaching agent pointing to 134 to host 38
+(r2p2) Attaching agent pointing to 7 to host 39
+(r2p2) Attaching agent pointing to 23 to host 39
+(r2p2) Attaching agent pointing to 55 to host 39
+(r2p2) Attaching agent pointing to 71 to host 39
+(r2p2) Attaching agent pointing to 87 to host 39
+(r2p2) Attaching agent pointing to 103 to host 39
+(r2p2) Attaching agent pointing to 119 to host 39
+(r2p2) Attaching agent pointing to 135 to host 39
+(r2p2) Attaching agent pointing to 8 to host 40
+(r2p2) Attaching agent pointing to 24 to host 40
+(r2p2) Attaching agent pointing to 56 to host 40
+(r2p2) Attaching agent pointing to 72 to host 40
+(r2p2) Attaching agent pointing to 88 to host 40
+(r2p2) Attaching agent pointing to 104 to host 40
+(r2p2) Attaching agent pointing to 120 to host 40
+(r2p2) Attaching agent pointing to 136 to host 40
+(r2p2) Attaching agent pointing to 9 to host 41
+(r2p2) Attaching agent pointing to 25 to host 41
+(r2p2) Attaching agent pointing to 57 to host 41
+(r2p2) Attaching agent pointing to 73 to host 41
+(r2p2) Attaching agent pointing to 89 to host 41
+(r2p2) Attaching agent pointing to 105 to host 41
+(r2p2) Attaching agent pointing to 121 to host 41
+(r2p2) Attaching agent pointing to 137 to host 41
+(r2p2) Attaching agent pointing to 10 to host 42
+(r2p2) Attaching agent pointing to 26 to host 42
+(r2p2) Attaching agent pointing to 58 to host 42
+(r2p2) Attaching agent pointing to 74 to host 42
+(r2p2) Attaching agent pointing to 90 to host 42
+(r2p2) Attaching agent pointing to 106 to host 42
+(r2p2) Attaching agent pointing to 122 to host 42
+(r2p2) Attaching agent pointing to 138 to host 42
+(r2p2) Attaching agent pointing to 11 to host 43
+(r2p2) Attaching agent pointing to 27 to host 43
+(r2p2) Attaching agent pointing to 59 to host 43
+(r2p2) Attaching agent pointing to 75 to host 43
+(r2p2) Attaching agent pointing to 91 to host 43
+(r2p2) Attaching agent pointing to 107 to host 43
+(r2p2) Attaching agent pointing to 123 to host 43
+(r2p2) Attaching agent pointing to 139 to host 43
+(r2p2) Attaching agent pointing to 12 to host 44
+(r2p2) Attaching agent pointing to 28 to host 44
+(r2p2) Attaching agent pointing to 60 to host 44
+(r2p2) Attaching agent pointing to 76 to host 44
+(r2p2) Attaching agent pointing to 92 to host 44
+(r2p2) Attaching agent pointing to 108 to host 44
+(r2p2) Attaching agent pointing to 124 to host 44
+(r2p2) Attaching agent pointing to 140 to host 44
+(r2p2) Attaching agent pointing to 13 to host 45
+(r2p2) Attaching agent pointing to 29 to host 45
+(r2p2) Attaching agent pointing to 61 to host 45
+(r2p2) Attaching agent pointing to 77 to host 45
+(r2p2) Attaching agent pointing to 93 to host 45
+(r2p2) Attaching agent pointing to 109 to host 45
+(r2p2) Attaching agent pointing to 125 to host 45
+(r2p2) Attaching agent pointing to 141 to host 45
+(r2p2) Attaching agent pointing to 14 to host 46
+(r2p2) Attaching agent pointing to 30 to host 46
+(r2p2) Attaching agent pointing to 62 to host 46
+(r2p2) Attaching agent pointing to 78 to host 46
+(r2p2) Attaching agent pointing to 94 to host 46
+(r2p2) Attaching agent pointing to 110 to host 46
+(r2p2) Attaching agent pointing to 126 to host 46
+(r2p2) Attaching agent pointing to 142 to host 46
+(r2p2) Attaching agent pointing to 15 to host 47
+(r2p2) Attaching agent pointing to 31 to host 47
+(r2p2) Attaching agent pointing to 63 to host 47
+(r2p2) Attaching agent pointing to 79 to host 47
+(r2p2) Attaching agent pointing to 95 to host 47
+(r2p2) Attaching agent pointing to 111 to host 47
+(r2p2) Attaching agent pointing to 127 to host 47
+(r2p2) Attaching agent pointing to 143 to host 47
+(r2p2) Attaching agent pointing to 0 to host 48
+(r2p2) Attaching agent pointing to 16 to host 48
+(r2p2) Attaching agent pointing to 32 to host 48
+(r2p2) Attaching agent pointing to 64 to host 48
+(r2p2) Attaching agent pointing to 80 to host 48
+(r2p2) Attaching agent pointing to 96 to host 48
+(r2p2) Attaching agent pointing to 112 to host 48
+(r2p2) Attaching agent pointing to 128 to host 48
+(r2p2) Attaching agent pointing to 1 to host 49
+(r2p2) Attaching agent pointing to 17 to host 49
+(r2p2) Attaching agent pointing to 33 to host 49
+(r2p2) Attaching agent pointing to 65 to host 49
+(r2p2) Attaching agent pointing to 81 to host 49
+(r2p2) Attaching agent pointing to 97 to host 49
+(r2p2) Attaching agent pointing to 113 to host 49
+(r2p2) Attaching agent pointing to 129 to host 49
+(r2p2) Attaching agent pointing to 2 to host 50
+(r2p2) Attaching agent pointing to 18 to host 50
+(r2p2) Attaching agent pointing to 34 to host 50
+(r2p2) Attaching agent pointing to 66 to host 50
+(r2p2) Attaching agent pointing to 82 to host 50
+(r2p2) Attaching agent pointing to 98 to host 50
+(r2p2) Attaching agent pointing to 114 to host 50
+(r2p2) Attaching agent pointing to 130 to host 50
+(r2p2) Attaching agent pointing to 3 to host 51
+(r2p2) Attaching agent pointing to 19 to host 51
+(r2p2) Attaching agent pointing to 35 to host 51
+(r2p2) Attaching agent pointing to 67 to host 51
+(r2p2) Attaching agent pointing to 83 to host 51
+(r2p2) Attaching agent pointing to 99 to host 51
+(r2p2) Attaching agent pointing to 115 to host 51
+(r2p2) Attaching agent pointing to 131 to host 51
+(r2p2) Attaching agent pointing to 4 to host 52
+(r2p2) Attaching agent pointing to 20 to host 52
+(r2p2) Attaching agent pointing to 36 to host 52
+(r2p2) Attaching agent pointing to 68 to host 52
+(r2p2) Attaching agent pointing to 84 to host 52
+(r2p2) Attaching agent pointing to 100 to host 52
+(r2p2) Attaching agent pointing to 116 to host 52
+(r2p2) Attaching agent pointing to 132 to host 52
+(r2p2) Attaching agent pointing to 5 to host 53
+(r2p2) Attaching agent pointing to 21 to host 53
+(r2p2) Attaching agent pointing to 37 to host 53
+(r2p2) Attaching agent pointing to 69 to host 53
+(r2p2) Attaching agent pointing to 85 to host 53
+(r2p2) Attaching agent pointing to 101 to host 53
+(r2p2) Attaching agent pointing to 117 to host 53
+(r2p2) Attaching agent pointing to 133 to host 53
+(r2p2) Attaching agent pointing to 6 to host 54
+(r2p2) Attaching agent pointing to 22 to host 54
+(r2p2) Attaching agent pointing to 38 to host 54
+(r2p2) Attaching agent pointing to 70 to host 54
+(r2p2) Attaching agent pointing to 86 to host 54
+(r2p2) Attaching agent pointing to 102 to host 54
+(r2p2) Attaching agent pointing to 118 to host 54
+(r2p2) Attaching agent pointing to 134 to host 54
+(r2p2) Attaching agent pointing to 7 to host 55
+(r2p2) Attaching agent pointing to 23 to host 55
+(r2p2) Attaching agent pointing to 39 to host 55
+(r2p2) Attaching agent pointing to 71 to host 55
+(r2p2) Attaching agent pointing to 87 to host 55
+(r2p2) Attaching agent pointing to 103 to host 55
+(r2p2) Attaching agent pointing to 119 to host 55
+(r2p2) Attaching agent pointing to 135 to host 55
+(r2p2) Attaching agent pointing to 8 to host 56
+(r2p2) Attaching agent pointing to 24 to host 56
+(r2p2) Attaching agent pointing to 40 to host 56
+(r2p2) Attaching agent pointing to 72 to host 56
+(r2p2) Attaching agent pointing to 88 to host 56
+(r2p2) Attaching agent pointing to 104 to host 56
+(r2p2) Attaching agent pointing to 120 to host 56
+(r2p2) Attaching agent pointing to 136 to host 56
+(r2p2) Attaching agent pointing to 9 to host 57
+(r2p2) Attaching agent pointing to 25 to host 57
+(r2p2) Attaching agent pointing to 41 to host 57
+(r2p2) Attaching agent pointing to 73 to host 57
+(r2p2) Attaching agent pointing to 89 to host 57
+(r2p2) Attaching agent pointing to 105 to host 57
+(r2p2) Attaching agent pointing to 121 to host 57
+(r2p2) Attaching agent pointing to 137 to host 57
+(r2p2) Attaching agent pointing to 10 to host 58
+(r2p2) Attaching agent pointing to 26 to host 58
+(r2p2) Attaching agent pointing to 42 to host 58
+(r2p2) Attaching agent pointing to 74 to host 58
+(r2p2) Attaching agent pointing to 90 to host 58
+(r2p2) Attaching agent pointing to 106 to host 58
+(r2p2) Attaching agent pointing to 122 to host 58
+(r2p2) Attaching agent pointing to 138 to host 58
+(r2p2) Attaching agent pointing to 11 to host 59
+(r2p2) Attaching agent pointing to 27 to host 59
+(r2p2) Attaching agent pointing to 43 to host 59
+(r2p2) Attaching agent pointing to 75 to host 59
+(r2p2) Attaching agent pointing to 91 to host 59
+(r2p2) Attaching agent pointing to 107 to host 59
+(r2p2) Attaching agent pointing to 123 to host 59
+(r2p2) Attaching agent pointing to 139 to host 59
+(r2p2) Attaching agent pointing to 12 to host 60
+(r2p2) Attaching agent pointing to 28 to host 60
+(r2p2) Attaching agent pointing to 44 to host 60
+(r2p2) Attaching agent pointing to 76 to host 60
+(r2p2) Attaching agent pointing to 92 to host 60
+(r2p2) Attaching agent pointing to 108 to host 60
+(r2p2) Attaching agent pointing to 124 to host 60
+(r2p2) Attaching agent pointing to 140 to host 60
+(r2p2) Attaching agent pointing to 13 to host 61
+(r2p2) Attaching agent pointing to 29 to host 61
+(r2p2) Attaching agent pointing to 45 to host 61
+(r2p2) Attaching agent pointing to 77 to host 61
+(r2p2) Attaching agent pointing to 93 to host 61
+(r2p2) Attaching agent pointing to 109 to host 61
+(r2p2) Attaching agent pointing to 125 to host 61
+(r2p2) Attaching agent pointing to 141 to host 61
+(r2p2) Attaching agent pointing to 14 to host 62
+(r2p2) Attaching agent pointing to 30 to host 62
+(r2p2) Attaching agent pointing to 46 to host 62
+(r2p2) Attaching agent pointing to 78 to host 62
+(r2p2) Attaching agent pointing to 94 to host 62
+(r2p2) Attaching agent pointing to 110 to host 62
+(r2p2) Attaching agent pointing to 126 to host 62
+(r2p2) Attaching agent pointing to 142 to host 62
+(r2p2) Attaching agent pointing to 15 to host 63
+(r2p2) Attaching agent pointing to 31 to host 63
+(r2p2) Attaching agent pointing to 47 to host 63
+(r2p2) Attaching agent pointing to 79 to host 63
+(r2p2) Attaching agent pointing to 95 to host 63
+(r2p2) Attaching agent pointing to 111 to host 63
+(r2p2) Attaching agent pointing to 127 to host 63
+(r2p2) Attaching agent pointing to 143 to host 63
+(r2p2) Attaching agent pointing to 0 to host 64
+(r2p2) Attaching agent pointing to 16 to host 64
+(r2p2) Attaching agent pointing to 32 to host 64
+(r2p2) Attaching agent pointing to 48 to host 64
+(r2p2) Attaching agent pointing to 80 to host 64
+(r2p2) Attaching agent pointing to 96 to host 64
+(r2p2) Attaching agent pointing to 112 to host 64
+(r2p2) Attaching agent pointing to 128 to host 64
+(r2p2) Attaching agent pointing to 1 to host 65
+(r2p2) Attaching agent pointing to 17 to host 65
+(r2p2) Attaching agent pointing to 33 to host 65
+(r2p2) Attaching agent pointing to 49 to host 65
+(r2p2) Attaching agent pointing to 81 to host 65
+(r2p2) Attaching agent pointing to 97 to host 65
+(r2p2) Attaching agent pointing to 113 to host 65
+(r2p2) Attaching agent pointing to 129 to host 65
+(r2p2) Attaching agent pointing to 2 to host 66
+(r2p2) Attaching agent pointing to 18 to host 66
+(r2p2) Attaching agent pointing to 34 to host 66
+(r2p2) Attaching agent pointing to 50 to host 66
+(r2p2) Attaching agent pointing to 82 to host 66
+(r2p2) Attaching agent pointing to 98 to host 66
+(r2p2) Attaching agent pointing to 114 to host 66
+(r2p2) Attaching agent pointing to 130 to host 66
+(r2p2) Attaching agent pointing to 3 to host 67
+(r2p2) Attaching agent pointing to 19 to host 67
+(r2p2) Attaching agent pointing to 35 to host 67
+(r2p2) Attaching agent pointing to 51 to host 67
+(r2p2) Attaching agent pointing to 83 to host 67
+(r2p2) Attaching agent pointing to 99 to host 67
+(r2p2) Attaching agent pointing to 115 to host 67
+(r2p2) Attaching agent pointing to 131 to host 67
+(r2p2) Attaching agent pointing to 4 to host 68
+(r2p2) Attaching agent pointing to 20 to host 68
+(r2p2) Attaching agent pointing to 36 to host 68
+(r2p2) Attaching agent pointing to 52 to host 68
+(r2p2) Attaching agent pointing to 84 to host 68
+(r2p2) Attaching agent pointing to 100 to host 68
+(r2p2) Attaching agent pointing to 116 to host 68
+(r2p2) Attaching agent pointing to 132 to host 68
+(r2p2) Attaching agent pointing to 5 to host 69
+(r2p2) Attaching agent pointing to 21 to host 69
+(r2p2) Attaching agent pointing to 37 to host 69
+(r2p2) Attaching agent pointing to 53 to host 69
+(r2p2) Attaching agent pointing to 85 to host 69
+(r2p2) Attaching agent pointing to 101 to host 69
+(r2p2) Attaching agent pointing to 117 to host 69
+(r2p2) Attaching agent pointing to 133 to host 69
+(r2p2) Attaching agent pointing to 6 to host 70
+(r2p2) Attaching agent pointing to 22 to host 70
+(r2p2) Attaching agent pointing to 38 to host 70
+(r2p2) Attaching agent pointing to 54 to host 70
+(r2p2) Attaching agent pointing to 86 to host 70
+(r2p2) Attaching agent pointing to 102 to host 70
+(r2p2) Attaching agent pointing to 118 to host 70
+(r2p2) Attaching agent pointing to 134 to host 70
+(r2p2) Attaching agent pointing to 7 to host 71
+(r2p2) Attaching agent pointing to 23 to host 71
+(r2p2) Attaching agent pointing to 39 to host 71
+(r2p2) Attaching agent pointing to 55 to host 71
+(r2p2) Attaching agent pointing to 87 to host 71
+(r2p2) Attaching agent pointing to 103 to host 71
+(r2p2) Attaching agent pointing to 119 to host 71
+(r2p2) Attaching agent pointing to 135 to host 71
+(r2p2) Attaching agent pointing to 8 to host 72
+(r2p2) Attaching agent pointing to 24 to host 72
+(r2p2) Attaching agent pointing to 40 to host 72
+(r2p2) Attaching agent pointing to 56 to host 72
+(r2p2) Attaching agent pointing to 88 to host 72
+(r2p2) Attaching agent pointing to 104 to host 72
+(r2p2) Attaching agent pointing to 120 to host 72
+(r2p2) Attaching agent pointing to 136 to host 72
+(r2p2) Attaching agent pointing to 9 to host 73
+(r2p2) Attaching agent pointing to 25 to host 73
+(r2p2) Attaching agent pointing to 41 to host 73
+(r2p2) Attaching agent pointing to 57 to host 73
+(r2p2) Attaching agent pointing to 89 to host 73
+(r2p2) Attaching agent pointing to 105 to host 73
+(r2p2) Attaching agent pointing to 121 to host 73
+(r2p2) Attaching agent pointing to 137 to host 73
+(r2p2) Attaching agent pointing to 10 to host 74
+(r2p2) Attaching agent pointing to 26 to host 74
+(r2p2) Attaching agent pointing to 42 to host 74
+(r2p2) Attaching agent pointing to 58 to host 74
+(r2p2) Attaching agent pointing to 90 to host 74
+(r2p2) Attaching agent pointing to 106 to host 74
+(r2p2) Attaching agent pointing to 122 to host 74
+(r2p2) Attaching agent pointing to 138 to host 74
+(r2p2) Attaching agent pointing to 11 to host 75
+(r2p2) Attaching agent pointing to 27 to host 75
+(r2p2) Attaching agent pointing to 43 to host 75
+(r2p2) Attaching agent pointing to 59 to host 75
+(r2p2) Attaching agent pointing to 91 to host 75
+(r2p2) Attaching agent pointing to 107 to host 75
+(r2p2) Attaching agent pointing to 123 to host 75
+(r2p2) Attaching agent pointing to 139 to host 75
+(r2p2) Attaching agent pointing to 12 to host 76
+(r2p2) Attaching agent pointing to 28 to host 76
+(r2p2) Attaching agent pointing to 44 to host 76
+(r2p2) Attaching agent pointing to 60 to host 76
+(r2p2) Attaching agent pointing to 92 to host 76
+(r2p2) Attaching agent pointing to 108 to host 76
+(r2p2) Attaching agent pointing to 124 to host 76
+(r2p2) Attaching agent pointing to 140 to host 76
+(r2p2) Attaching agent pointing to 13 to host 77
+(r2p2) Attaching agent pointing to 29 to host 77
+(r2p2) Attaching agent pointing to 45 to host 77
+(r2p2) Attaching agent pointing to 61 to host 77
+(r2p2) Attaching agent pointing to 93 to host 77
+(r2p2) Attaching agent pointing to 109 to host 77
+(r2p2) Attaching agent pointing to 125 to host 77
+(r2p2) Attaching agent pointing to 141 to host 77
+(r2p2) Attaching agent pointing to 14 to host 78
+(r2p2) Attaching agent pointing to 30 to host 78
+(r2p2) Attaching agent pointing to 46 to host 78
+(r2p2) Attaching agent pointing to 62 to host 78
+(r2p2) Attaching agent pointing to 94 to host 78
+(r2p2) Attaching agent pointing to 110 to host 78
+(r2p2) Attaching agent pointing to 126 to host 78
+(r2p2) Attaching agent pointing to 142 to host 78
+(r2p2) Attaching agent pointing to 15 to host 79
+(r2p2) Attaching agent pointing to 31 to host 79
+(r2p2) Attaching agent pointing to 47 to host 79
+(r2p2) Attaching agent pointing to 63 to host 79
+(r2p2) Attaching agent pointing to 95 to host 79
+(r2p2) Attaching agent pointing to 111 to host 79
+(r2p2) Attaching agent pointing to 127 to host 79
+(r2p2) Attaching agent pointing to 143 to host 79
+(r2p2) Attaching agent pointing to 0 to host 80
+(r2p2) Attaching agent pointing to 16 to host 80
+(r2p2) Attaching agent pointing to 32 to host 80
+(r2p2) Attaching agent pointing to 48 to host 80
+(r2p2) Attaching agent pointing to 64 to host 80
+(r2p2) Attaching agent pointing to 96 to host 80
+(r2p2) Attaching agent pointing to 112 to host 80
+(r2p2) Attaching agent pointing to 128 to host 80
+(r2p2) Attaching agent pointing to 1 to host 81
+(r2p2) Attaching agent pointing to 17 to host 81
+(r2p2) Attaching agent pointing to 33 to host 81
+(r2p2) Attaching agent pointing to 49 to host 81
+(r2p2) Attaching agent pointing to 65 to host 81
+(r2p2) Attaching agent pointing to 97 to host 81
+(r2p2) Attaching agent pointing to 113 to host 81
+(r2p2) Attaching agent pointing to 129 to host 81
+(r2p2) Attaching agent pointing to 2 to host 82
+(r2p2) Attaching agent pointing to 18 to host 82
+(r2p2) Attaching agent pointing to 34 to host 82
+(r2p2) Attaching agent pointing to 50 to host 82
+(r2p2) Attaching agent pointing to 66 to host 82
+(r2p2) Attaching agent pointing to 98 to host 82
+(r2p2) Attaching agent pointing to 114 to host 82
+(r2p2) Attaching agent pointing to 130 to host 82
+(r2p2) Attaching agent pointing to 3 to host 83
+(r2p2) Attaching agent pointing to 19 to host 83
+(r2p2) Attaching agent pointing to 35 to host 83
+(r2p2) Attaching agent pointing to 51 to host 83
+(r2p2) Attaching agent pointing to 67 to host 83
+(r2p2) Attaching agent pointing to 99 to host 83
+(r2p2) Attaching agent pointing to 115 to host 83
+(r2p2) Attaching agent pointing to 131 to host 83
+(r2p2) Attaching agent pointing to 4 to host 84
+(r2p2) Attaching agent pointing to 20 to host 84
+(r2p2) Attaching agent pointing to 36 to host 84
+(r2p2) Attaching agent pointing to 52 to host 84
+(r2p2) Attaching agent pointing to 68 to host 84
+(r2p2) Attaching agent pointing to 100 to host 84
+(r2p2) Attaching agent pointing to 116 to host 84
+(r2p2) Attaching agent pointing to 132 to host 84
+(r2p2) Attaching agent pointing to 5 to host 85
+(r2p2) Attaching agent pointing to 21 to host 85
+(r2p2) Attaching agent pointing to 37 to host 85
+(r2p2) Attaching agent pointing to 53 to host 85
+(r2p2) Attaching agent pointing to 69 to host 85
+(r2p2) Attaching agent pointing to 101 to host 85
+(r2p2) Attaching agent pointing to 117 to host 85
+(r2p2) Attaching agent pointing to 133 to host 85
+(r2p2) Attaching agent pointing to 6 to host 86
+(r2p2) Attaching agent pointing to 22 to host 86
+(r2p2) Attaching agent pointing to 38 to host 86
+(r2p2) Attaching agent pointing to 54 to host 86
+(r2p2) Attaching agent pointing to 70 to host 86
+(r2p2) Attaching agent pointing to 102 to host 86
+(r2p2) Attaching agent pointing to 118 to host 86
+(r2p2) Attaching agent pointing to 134 to host 86
+(r2p2) Attaching agent pointing to 7 to host 87
+(r2p2) Attaching agent pointing to 23 to host 87
+(r2p2) Attaching agent pointing to 39 to host 87
+(r2p2) Attaching agent pointing to 55 to host 87
+(r2p2) Attaching agent pointing to 71 to host 87
+(r2p2) Attaching agent pointing to 103 to host 87
+(r2p2) Attaching agent pointing to 119 to host 87
+(r2p2) Attaching agent pointing to 135 to host 87
+(r2p2) Attaching agent pointing to 8 to host 88
+(r2p2) Attaching agent pointing to 24 to host 88
+(r2p2) Attaching agent pointing to 40 to host 88
+(r2p2) Attaching agent pointing to 56 to host 88
+(r2p2) Attaching agent pointing to 72 to host 88
+(r2p2) Attaching agent pointing to 104 to host 88
+(r2p2) Attaching agent pointing to 120 to host 88
+(r2p2) Attaching agent pointing to 136 to host 88
+(r2p2) Attaching agent pointing to 9 to host 89
+(r2p2) Attaching agent pointing to 25 to host 89
+(r2p2) Attaching agent pointing to 41 to host 89
+(r2p2) Attaching agent pointing to 57 to host 89
+(r2p2) Attaching agent pointing to 73 to host 89
+(r2p2) Attaching agent pointing to 105 to host 89
+(r2p2) Attaching agent pointing to 121 to host 89
+(r2p2) Attaching agent pointing to 137 to host 89
+(r2p2) Attaching agent pointing to 10 to host 90
+(r2p2) Attaching agent pointing to 26 to host 90
+(r2p2) Attaching agent pointing to 42 to host 90
+(r2p2) Attaching agent pointing to 58 to host 90
+(r2p2) Attaching agent pointing to 74 to host 90
+(r2p2) Attaching agent pointing to 106 to host 90
+(r2p2) Attaching agent pointing to 122 to host 90
+(r2p2) Attaching agent pointing to 138 to host 90
+(r2p2) Attaching agent pointing to 11 to host 91
+(r2p2) Attaching agent pointing to 27 to host 91
+(r2p2) Attaching agent pointing to 43 to host 91
+(r2p2) Attaching agent pointing to 59 to host 91
+(r2p2) Attaching agent pointing to 75 to host 91
+(r2p2) Attaching agent pointing to 107 to host 91
+(r2p2) Attaching agent pointing to 123 to host 91
+(r2p2) Attaching agent pointing to 139 to host 91
+(r2p2) Attaching agent pointing to 12 to host 92
+(r2p2) Attaching agent pointing to 28 to host 92
+(r2p2) Attaching agent pointing to 44 to host 92
+(r2p2) Attaching agent pointing to 60 to host 92
+(r2p2) Attaching agent pointing to 76 to host 92
+(r2p2) Attaching agent pointing to 108 to host 92
+(r2p2) Attaching agent pointing to 124 to host 92
+(r2p2) Attaching agent pointing to 140 to host 92
+(r2p2) Attaching agent pointing to 13 to host 93
+(r2p2) Attaching agent pointing to 29 to host 93
+(r2p2) Attaching agent pointing to 45 to host 93
+(r2p2) Attaching agent pointing to 61 to host 93
+(r2p2) Attaching agent pointing to 77 to host 93
+(r2p2) Attaching agent pointing to 109 to host 93
+(r2p2) Attaching agent pointing to 125 to host 93
+(r2p2) Attaching agent pointing to 141 to host 93
+(r2p2) Attaching agent pointing to 14 to host 94
+(r2p2) Attaching agent pointing to 30 to host 94
+(r2p2) Attaching agent pointing to 46 to host 94
+(r2p2) Attaching agent pointing to 62 to host 94
+(r2p2) Attaching agent pointing to 78 to host 94
+(r2p2) Attaching agent pointing to 110 to host 94
+(r2p2) Attaching agent pointing to 126 to host 94
+(r2p2) Attaching agent pointing to 142 to host 94
+(r2p2) Attaching agent pointing to 15 to host 95
+(r2p2) Attaching agent pointing to 31 to host 95
+(r2p2) Attaching agent pointing to 47 to host 95
+(r2p2) Attaching agent pointing to 63 to host 95
+(r2p2) Attaching agent pointing to 79 to host 95
+(r2p2) Attaching agent pointing to 111 to host 95
+(r2p2) Attaching agent pointing to 127 to host 95
+(r2p2) Attaching agent pointing to 143 to host 95
+(r2p2) Attaching agent pointing to 0 to host 96
+(r2p2) Attaching agent pointing to 16 to host 96
+(r2p2) Attaching agent pointing to 32 to host 96
+(r2p2) Attaching agent pointing to 48 to host 96
+(r2p2) Attaching agent pointing to 64 to host 96
+(r2p2) Attaching agent pointing to 80 to host 96
+(r2p2) Attaching agent pointing to 112 to host 96
+(r2p2) Attaching agent pointing to 128 to host 96
+(r2p2) Attaching agent pointing to 1 to host 97
+(r2p2) Attaching agent pointing to 17 to host 97
+(r2p2) Attaching agent pointing to 33 to host 97
+(r2p2) Attaching agent pointing to 49 to host 97
+(r2p2) Attaching agent pointing to 65 to host 97
+(r2p2) Attaching agent pointing to 81 to host 97
+(r2p2) Attaching agent pointing to 113 to host 97
+(r2p2) Attaching agent pointing to 129 to host 97
+(r2p2) Attaching agent pointing to 2 to host 98
+(r2p2) Attaching agent pointing to 18 to host 98
+(r2p2) Attaching agent pointing to 34 to host 98
+(r2p2) Attaching agent pointing to 50 to host 98
+(r2p2) Attaching agent pointing to 66 to host 98
+(r2p2) Attaching agent pointing to 82 to host 98
+(r2p2) Attaching agent pointing to 114 to host 98
+(r2p2) Attaching agent pointing to 130 to host 98
+(r2p2) Attaching agent pointing to 3 to host 99
+(r2p2) Attaching agent pointing to 19 to host 99
+(r2p2) Attaching agent pointing to 35 to host 99
+(r2p2) Attaching agent pointing to 51 to host 99
+(r2p2) Attaching agent pointing to 67 to host 99
+(r2p2) Attaching agent pointing to 83 to host 99
+(r2p2) Attaching agent pointing to 115 to host 99
+(r2p2) Attaching agent pointing to 131 to host 99
+(r2p2) Attaching agent pointing to 4 to host 100
+(r2p2) Attaching agent pointing to 20 to host 100
+(r2p2) Attaching agent pointing to 36 to host 100
+(r2p2) Attaching agent pointing to 52 to host 100
+(r2p2) Attaching agent pointing to 68 to host 100
+(r2p2) Attaching agent pointing to 84 to host 100
+(r2p2) Attaching agent pointing to 116 to host 100
+(r2p2) Attaching agent pointing to 132 to host 100
+(r2p2) Attaching agent pointing to 5 to host 101
+(r2p2) Attaching agent pointing to 21 to host 101
+(r2p2) Attaching agent pointing to 37 to host 101
+(r2p2) Attaching agent pointing to 53 to host 101
+(r2p2) Attaching agent pointing to 69 to host 101
+(r2p2) Attaching agent pointing to 85 to host 101
+(r2p2) Attaching agent pointing to 117 to host 101
+(r2p2) Attaching agent pointing to 133 to host 101
+(r2p2) Attaching agent pointing to 6 to host 102
+(r2p2) Attaching agent pointing to 22 to host 102
+(r2p2) Attaching agent pointing to 38 to host 102
+(r2p2) Attaching agent pointing to 54 to host 102
+(r2p2) Attaching agent pointing to 70 to host 102
+(r2p2) Attaching agent pointing to 86 to host 102
+(r2p2) Attaching agent pointing to 118 to host 102
+(r2p2) Attaching agent pointing to 134 to host 102
+(r2p2) Attaching agent pointing to 7 to host 103
+(r2p2) Attaching agent pointing to 23 to host 103
+(r2p2) Attaching agent pointing to 39 to host 103
+(r2p2) Attaching agent pointing to 55 to host 103
+(r2p2) Attaching agent pointing to 71 to host 103
+(r2p2) Attaching agent pointing to 87 to host 103
+(r2p2) Attaching agent pointing to 119 to host 103
+(r2p2) Attaching agent pointing to 135 to host 103
+(r2p2) Attaching agent pointing to 8 to host 104
+(r2p2) Attaching agent pointing to 24 to host 104
+(r2p2) Attaching agent pointing to 40 to host 104
+(r2p2) Attaching agent pointing to 56 to host 104
+(r2p2) Attaching agent pointing to 72 to host 104
+(r2p2) Attaching agent pointing to 88 to host 104
+(r2p2) Attaching agent pointing to 120 to host 104
+(r2p2) Attaching agent pointing to 136 to host 104
+(r2p2) Attaching agent pointing to 9 to host 105
+(r2p2) Attaching agent pointing to 25 to host 105
+(r2p2) Attaching agent pointing to 41 to host 105
+(r2p2) Attaching agent pointing to 57 to host 105
+(r2p2) Attaching agent pointing to 73 to host 105
+(r2p2) Attaching agent pointing to 89 to host 105
+(r2p2) Attaching agent pointing to 121 to host 105
+(r2p2) Attaching agent pointing to 137 to host 105
+(r2p2) Attaching agent pointing to 10 to host 106
+(r2p2) Attaching agent pointing to 26 to host 106
+(r2p2) Attaching agent pointing to 42 to host 106
+(r2p2) Attaching agent pointing to 58 to host 106
+(r2p2) Attaching agent pointing to 74 to host 106
+(r2p2) Attaching agent pointing to 90 to host 106
+(r2p2) Attaching agent pointing to 122 to host 106
+(r2p2) Attaching agent pointing to 138 to host 106
+(r2p2) Attaching agent pointing to 11 to host 107
+(r2p2) Attaching agent pointing to 27 to host 107
+(r2p2) Attaching agent pointing to 43 to host 107
+(r2p2) Attaching agent pointing to 59 to host 107
+(r2p2) Attaching agent pointing to 75 to host 107
+(r2p2) Attaching agent pointing to 91 to host 107
+(r2p2) Attaching agent pointing to 123 to host 107
+(r2p2) Attaching agent pointing to 139 to host 107
+(r2p2) Attaching agent pointing to 12 to host 108
+(r2p2) Attaching agent pointing to 28 to host 108
+(r2p2) Attaching agent pointing to 44 to host 108
+(r2p2) Attaching agent pointing to 60 to host 108
+(r2p2) Attaching agent pointing to 76 to host 108
+(r2p2) Attaching agent pointing to 92 to host 108
+(r2p2) Attaching agent pointing to 124 to host 108
+(r2p2) Attaching agent pointing to 140 to host 108
+(r2p2) Attaching agent pointing to 13 to host 109
+(r2p2) Attaching agent pointing to 29 to host 109
+(r2p2) Attaching agent pointing to 45 to host 109
+(r2p2) Attaching agent pointing to 61 to host 109
+(r2p2) Attaching agent pointing to 77 to host 109
+(r2p2) Attaching agent pointing to 93 to host 109
+(r2p2) Attaching agent pointing to 125 to host 109
+(r2p2) Attaching agent pointing to 141 to host 109
+(r2p2) Attaching agent pointing to 14 to host 110
+(r2p2) Attaching agent pointing to 30 to host 110
+(r2p2) Attaching agent pointing to 46 to host 110
+(r2p2) Attaching agent pointing to 62 to host 110
+(r2p2) Attaching agent pointing to 78 to host 110
+(r2p2) Attaching agent pointing to 94 to host 110
+(r2p2) Attaching agent pointing to 126 to host 110
+(r2p2) Attaching agent pointing to 142 to host 110
+(r2p2) Attaching agent pointing to 15 to host 111
+(r2p2) Attaching agent pointing to 31 to host 111
+(r2p2) Attaching agent pointing to 47 to host 111
+(r2p2) Attaching agent pointing to 63 to host 111
+(r2p2) Attaching agent pointing to 79 to host 111
+(r2p2) Attaching agent pointing to 95 to host 111
+(r2p2) Attaching agent pointing to 127 to host 111
+(r2p2) Attaching agent pointing to 143 to host 111
+(r2p2) Attaching agent pointing to 0 to host 112
+(r2p2) Attaching agent pointing to 16 to host 112
+(r2p2) Attaching agent pointing to 32 to host 112
+(r2p2) Attaching agent pointing to 48 to host 112
+(r2p2) Attaching agent pointing to 64 to host 112
+(r2p2) Attaching agent pointing to 80 to host 112
+(r2p2) Attaching agent pointing to 96 to host 112
+(r2p2) Attaching agent pointing to 128 to host 112
+(r2p2) Attaching agent pointing to 1 to host 113
+(r2p2) Attaching agent pointing to 17 to host 113
+(r2p2) Attaching agent pointing to 33 to host 113
+(r2p2) Attaching agent pointing to 49 to host 113
+(r2p2) Attaching agent pointing to 65 to host 113
+(r2p2) Attaching agent pointing to 81 to host 113
+(r2p2) Attaching agent pointing to 97 to host 113
+(r2p2) Attaching agent pointing to 129 to host 113
+(r2p2) Attaching agent pointing to 2 to host 114
+(r2p2) Attaching agent pointing to 18 to host 114
+(r2p2) Attaching agent pointing to 34 to host 114
+(r2p2) Attaching agent pointing to 50 to host 114
+(r2p2) Attaching agent pointing to 66 to host 114
+(r2p2) Attaching agent pointing to 82 to host 114
+(r2p2) Attaching agent pointing to 98 to host 114
+(r2p2) Attaching agent pointing to 130 to host 114
+(r2p2) Attaching agent pointing to 3 to host 115
+(r2p2) Attaching agent pointing to 19 to host 115
+(r2p2) Attaching agent pointing to 35 to host 115
+(r2p2) Attaching agent pointing to 51 to host 115
+(r2p2) Attaching agent pointing to 67 to host 115
+(r2p2) Attaching agent pointing to 83 to host 115
+(r2p2) Attaching agent pointing to 99 to host 115
+(r2p2) Attaching agent pointing to 131 to host 115
+(r2p2) Attaching agent pointing to 4 to host 116
+(r2p2) Attaching agent pointing to 20 to host 116
+(r2p2) Attaching agent pointing to 36 to host 116
+(r2p2) Attaching agent pointing to 52 to host 116
+(r2p2) Attaching agent pointing to 68 to host 116
+(r2p2) Attaching agent pointing to 84 to host 116
+(r2p2) Attaching agent pointing to 100 to host 116
+(r2p2) Attaching agent pointing to 132 to host 116
+(r2p2) Attaching agent pointing to 5 to host 117
+(r2p2) Attaching agent pointing to 21 to host 117
+(r2p2) Attaching agent pointing to 37 to host 117
+(r2p2) Attaching agent pointing to 53 to host 117
+(r2p2) Attaching agent pointing to 69 to host 117
+(r2p2) Attaching agent pointing to 85 to host 117
+(r2p2) Attaching agent pointing to 101 to host 117
+(r2p2) Attaching agent pointing to 133 to host 117
+(r2p2) Attaching agent pointing to 6 to host 118
+(r2p2) Attaching agent pointing to 22 to host 118
+(r2p2) Attaching agent pointing to 38 to host 118
+(r2p2) Attaching agent pointing to 54 to host 118
+(r2p2) Attaching agent pointing to 70 to host 118
+(r2p2) Attaching agent pointing to 86 to host 118
+(r2p2) Attaching agent pointing to 102 to host 118
+(r2p2) Attaching agent pointing to 134 to host 118
+(r2p2) Attaching agent pointing to 7 to host 119
+(r2p2) Attaching agent pointing to 23 to host 119
+(r2p2) Attaching agent pointing to 39 to host 119
+(r2p2) Attaching agent pointing to 55 to host 119
+(r2p2) Attaching agent pointing to 71 to host 119
+(r2p2) Attaching agent pointing to 87 to host 119
+(r2p2) Attaching agent pointing to 103 to host 119
+(r2p2) Attaching agent pointing to 135 to host 119
+(r2p2) Attaching agent pointing to 8 to host 120
+(r2p2) Attaching agent pointing to 24 to host 120
+(r2p2) Attaching agent pointing to 40 to host 120
+(r2p2) Attaching agent pointing to 56 to host 120
+(r2p2) Attaching agent pointing to 72 to host 120
+(r2p2) Attaching agent pointing to 88 to host 120
+(r2p2) Attaching agent pointing to 104 to host 120
+(r2p2) Attaching agent pointing to 136 to host 120
+(r2p2) Attaching agent pointing to 9 to host 121
+(r2p2) Attaching agent pointing to 25 to host 121
+(r2p2) Attaching agent pointing to 41 to host 121
+(r2p2) Attaching agent pointing to 57 to host 121
+(r2p2) Attaching agent pointing to 73 to host 121
+(r2p2) Attaching agent pointing to 89 to host 121
+(r2p2) Attaching agent pointing to 105 to host 121
+(r2p2) Attaching agent pointing to 137 to host 121
+(r2p2) Attaching agent pointing to 10 to host 122
+(r2p2) Attaching agent pointing to 26 to host 122
+(r2p2) Attaching agent pointing to 42 to host 122
+(r2p2) Attaching agent pointing to 58 to host 122
+(r2p2) Attaching agent pointing to 74 to host 122
+(r2p2) Attaching agent pointing to 90 to host 122
+(r2p2) Attaching agent pointing to 106 to host 122
+(r2p2) Attaching agent pointing to 138 to host 122
+(r2p2) Attaching agent pointing to 11 to host 123
+(r2p2) Attaching agent pointing to 27 to host 123
+(r2p2) Attaching agent pointing to 43 to host 123
+(r2p2) Attaching agent pointing to 59 to host 123
+(r2p2) Attaching agent pointing to 75 to host 123
+(r2p2) Attaching agent pointing to 91 to host 123
+(r2p2) Attaching agent pointing to 107 to host 123
+(r2p2) Attaching agent pointing to 139 to host 123
+(r2p2) Attaching agent pointing to 12 to host 124
+(r2p2) Attaching agent pointing to 28 to host 124
+(r2p2) Attaching agent pointing to 44 to host 124
+(r2p2) Attaching agent pointing to 60 to host 124
+(r2p2) Attaching agent pointing to 76 to host 124
+(r2p2) Attaching agent pointing to 92 to host 124
+(r2p2) Attaching agent pointing to 108 to host 124
+(r2p2) Attaching agent pointing to 140 to host 124
+(r2p2) Attaching agent pointing to 13 to host 125
+(r2p2) Attaching agent pointing to 29 to host 125
+(r2p2) Attaching agent pointing to 45 to host 125
+(r2p2) Attaching agent pointing to 61 to host 125
+(r2p2) Attaching agent pointing to 77 to host 125
+(r2p2) Attaching agent pointing to 93 to host 125
+(r2p2) Attaching agent pointing to 109 to host 125
+(r2p2) Attaching agent pointing to 141 to host 125
+(r2p2) Attaching agent pointing to 14 to host 126
+(r2p2) Attaching agent pointing to 30 to host 126
+(r2p2) Attaching agent pointing to 46 to host 126
+(r2p2) Attaching agent pointing to 62 to host 126
+(r2p2) Attaching agent pointing to 78 to host 126
+(r2p2) Attaching agent pointing to 94 to host 126
+(r2p2) Attaching agent pointing to 110 to host 126
+(r2p2) Attaching agent pointing to 142 to host 126
+(r2p2) Attaching agent pointing to 15 to host 127
+(r2p2) Attaching agent pointing to 31 to host 127
+(r2p2) Attaching agent pointing to 47 to host 127
+(r2p2) Attaching agent pointing to 63 to host 127
+(r2p2) Attaching agent pointing to 79 to host 127
+(r2p2) Attaching agent pointing to 95 to host 127
+(r2p2) Attaching agent pointing to 111 to host 127
+(r2p2) Attaching agent pointing to 143 to host 127
+(r2p2) Attaching agent pointing to 0 to host 128
+(r2p2) Attaching agent pointing to 16 to host 128
+(r2p2) Attaching agent pointing to 32 to host 128
+(r2p2) Attaching agent pointing to 48 to host 128
+(r2p2) Attaching agent pointing to 64 to host 128
+(r2p2) Attaching agent pointing to 80 to host 128
+(r2p2) Attaching agent pointing to 96 to host 128
+(r2p2) Attaching agent pointing to 112 to host 128
+(r2p2) Attaching agent pointing to 1 to host 129
+(r2p2) Attaching agent pointing to 17 to host 129
+(r2p2) Attaching agent pointing to 33 to host 129
+(r2p2) Attaching agent pointing to 49 to host 129
+(r2p2) Attaching agent pointing to 65 to host 129
+(r2p2) Attaching agent pointing to 81 to host 129
+(r2p2) Attaching agent pointing to 97 to host 129
+(r2p2) Attaching agent pointing to 113 to host 129
+(r2p2) Attaching agent pointing to 2 to host 130
+(r2p2) Attaching agent pointing to 18 to host 130
+(r2p2) Attaching agent pointing to 34 to host 130
+(r2p2) Attaching agent pointing to 50 to host 130
+(r2p2) Attaching agent pointing to 66 to host 130
+(r2p2) Attaching agent pointing to 82 to host 130
+(r2p2) Attaching agent pointing to 98 to host 130
+(r2p2) Attaching agent pointing to 114 to host 130
+(r2p2) Attaching agent pointing to 3 to host 131
+(r2p2) Attaching agent pointing to 19 to host 131
+(r2p2) Attaching agent pointing to 35 to host 131
+(r2p2) Attaching agent pointing to 51 to host 131
+(r2p2) Attaching agent pointing to 67 to host 131
+(r2p2) Attaching agent pointing to 83 to host 131
+(r2p2) Attaching agent pointing to 99 to host 131
+(r2p2) Attaching agent pointing to 115 to host 131
+(r2p2) Attaching agent pointing to 4 to host 132
+(r2p2) Attaching agent pointing to 20 to host 132
+(r2p2) Attaching agent pointing to 36 to host 132
+(r2p2) Attaching agent pointing to 52 to host 132
+(r2p2) Attaching agent pointing to 68 to host 132
+(r2p2) Attaching agent pointing to 84 to host 132
+(r2p2) Attaching agent pointing to 100 to host 132
+(r2p2) Attaching agent pointing to 116 to host 132
+(r2p2) Attaching agent pointing to 5 to host 133
+(r2p2) Attaching agent pointing to 21 to host 133
+(r2p2) Attaching agent pointing to 37 to host 133
+(r2p2) Attaching agent pointing to 53 to host 133
+(r2p2) Attaching agent pointing to 69 to host 133
+(r2p2) Attaching agent pointing to 85 to host 133
+(r2p2) Attaching agent pointing to 101 to host 133
+(r2p2) Attaching agent pointing to 117 to host 133
+(r2p2) Attaching agent pointing to 6 to host 134
+(r2p2) Attaching agent pointing to 22 to host 134
+(r2p2) Attaching agent pointing to 38 to host 134
+(r2p2) Attaching agent pointing to 54 to host 134
+(r2p2) Attaching agent pointing to 70 to host 134
+(r2p2) Attaching agent pointing to 86 to host 134
+(r2p2) Attaching agent pointing to 102 to host 134
+(r2p2) Attaching agent pointing to 118 to host 134
+(r2p2) Attaching agent pointing to 7 to host 135
+(r2p2) Attaching agent pointing to 23 to host 135
+(r2p2) Attaching agent pointing to 39 to host 135
+(r2p2) Attaching agent pointing to 55 to host 135
+(r2p2) Attaching agent pointing to 71 to host 135
+(r2p2) Attaching agent pointing to 87 to host 135
+(r2p2) Attaching agent pointing to 103 to host 135
+(r2p2) Attaching agent pointing to 119 to host 135
+(r2p2) Attaching agent pointing to 8 to host 136
+(r2p2) Attaching agent pointing to 24 to host 136
+(r2p2) Attaching agent pointing to 40 to host 136
+(r2p2) Attaching agent pointing to 56 to host 136
+(r2p2) Attaching agent pointing to 72 to host 136
+(r2p2) Attaching agent pointing to 88 to host 136
+(r2p2) Attaching agent pointing to 104 to host 136
+(r2p2) Attaching agent pointing to 120 to host 136
+(r2p2) Attaching agent pointing to 9 to host 137
+(r2p2) Attaching agent pointing to 25 to host 137
+(r2p2) Attaching agent pointing to 41 to host 137
+(r2p2) Attaching agent pointing to 57 to host 137
+(r2p2) Attaching agent pointing to 73 to host 137
+(r2p2) Attaching agent pointing to 89 to host 137
+(r2p2) Attaching agent pointing to 105 to host 137
+(r2p2) Attaching agent pointing to 121 to host 137
+(r2p2) Attaching agent pointing to 10 to host 138
+(r2p2) Attaching agent pointing to 26 to host 138
+(r2p2) Attaching agent pointing to 42 to host 138
+(r2p2) Attaching agent pointing to 58 to host 138
+(r2p2) Attaching agent pointing to 74 to host 138
+(r2p2) Attaching agent pointing to 90 to host 138
+(r2p2) Attaching agent pointing to 106 to host 138
+(r2p2) Attaching agent pointing to 122 to host 138
+(r2p2) Attaching agent pointing to 11 to host 139
+(r2p2) Attaching agent pointing to 27 to host 139
+(r2p2) Attaching agent pointing to 43 to host 139
+(r2p2) Attaching agent pointing to 59 to host 139
+(r2p2) Attaching agent pointing to 75 to host 139
+(r2p2) Attaching agent pointing to 91 to host 139
+(r2p2) Attaching agent pointing to 107 to host 139
+(r2p2) Attaching agent pointing to 123 to host 139
+(r2p2) Attaching agent pointing to 12 to host 140
+(r2p2) Attaching agent pointing to 28 to host 140
+(r2p2) Attaching agent pointing to 44 to host 140
+(r2p2) Attaching agent pointing to 60 to host 140
+(r2p2) Attaching agent pointing to 76 to host 140
+(r2p2) Attaching agent pointing to 92 to host 140
+(r2p2) Attaching agent pointing to 108 to host 140
+(r2p2) Attaching agent pointing to 124 to host 140
+(r2p2) Attaching agent pointing to 13 to host 141
+(r2p2) Attaching agent pointing to 29 to host 141
+(r2p2) Attaching agent pointing to 45 to host 141
+(r2p2) Attaching agent pointing to 61 to host 141
+(r2p2) Attaching agent pointing to 77 to host 141
+(r2p2) Attaching agent pointing to 93 to host 141
+(r2p2) Attaching agent pointing to 109 to host 141
+(r2p2) Attaching agent pointing to 125 to host 141
+(r2p2) Attaching agent pointing to 14 to host 142
+(r2p2) Attaching agent pointing to 30 to host 142
+(r2p2) Attaching agent pointing to 46 to host 142
+(r2p2) Attaching agent pointing to 62 to host 142
+(r2p2) Attaching agent pointing to 78 to host 142
+(r2p2) Attaching agent pointing to 94 to host 142
+(r2p2) Attaching agent pointing to 110 to host 142
+(r2p2) Attaching agent pointing to 126 to host 142
+(r2p2) Attaching agent pointing to 15 to host 143
+(r2p2) Attaching agent pointing to 31 to host 143
+(r2p2) Attaching agent pointing to 47 to host 143
+(r2p2) Attaching agent pointing to 63 to host 143
+(r2p2) Attaching agent pointing to 79 to host 143
+(r2p2) Attaching agent pointing to 95 to host 143
+(r2p2) Attaching agent pointing to 111 to host 143
+(r2p2) Attaching agent pointing to 127 to host 143
+10.0/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 0.0% - tracing starts at 10.0
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0017  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0017  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0017  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0017  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0017  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0017  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0017  0: Dropped packet (d) when q length was: 107/106 In bytes: 158269/159000
+10.0017  0: Dropped packet (d) when q length was: 108/106 In bytes: 158877/159000
+10.0025  0: Dropped packet (d) when q length was: 104/106 In bytes: 157638/159000
+10.0025  0: Dropped packet (d) when q length was: 104/106 In bytes: 157638/159000
+10.0025  0: Dropped packet (d) when q length was: 104/106 In bytes: 157638/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 158442/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 157500/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 157500/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 157500/159000
+10.0025  0: Dropped packet (d) when q length was: 105/106 In bytes: 157500/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.0041  0: Dropped packet (d) when q length was: 104/106 In bytes: 157564/159000
+10.007585000000001/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 10.0% - tracing starts at 10.0
+10.0099  0: Dropped packet (d) when q length was: 107/106 In bytes: 158746/159000
+10.0099  0: Dropped packet (d) when q length was: 106/106 In bytes: 158682/159000
+10.0099  0: Dropped packet (d) when q length was: 106/106 In bytes: 158682/159000
+10.0099  0: Dropped packet (d) when q length was: 106/106 In bytes: 157535/159000
+10.0099  0: Dropped packet (d) when q length was: 106/106 In bytes: 157535/159000
+10.0099  0: Dropped packet (d) when q length was: 107/106 In bytes: 157599/159000
+10.0099  0: Dropped packet (d) when q length was: 106/106 In bytes: 157535/159000
+10.0099  0: Dropped packet (d) when q length was: 107/106 In bytes: 157599/159000
+10.0099  0: Dropped packet (d) when q length was: 106/106 In bytes: 157535/159000
+10.0099  0: Dropped packet (d) when q length was: 108/106 In bytes: 157663/159000
+10.015170000000001/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 20.0% - tracing starts at 10.0
+10.0162  0: Dropped packet (d) when q length was: 106/106 In bytes: 158000/159000
+10.0162  0: Dropped packet (d) when q length was: 106/106 In bytes: 158000/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 157936/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 157936/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 157936/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 157936/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0162  0: Dropped packet (d) when q length was: 107/106 In bytes: 158147/159000
+10.0162  0: Dropped packet (d) when q length was: 107/106 In bytes: 158147/159000
+10.0162  0: Dropped packet (d) when q length was: 107/106 In bytes: 158147/159000
+10.0162  0: Dropped packet (d) when q length was: 107/106 In bytes: 158147/159000
+10.0162  0: Dropped packet (d) when q length was: 106/106 In bytes: 158083/159000
+10.0162  0: Dropped packet (d) when q length was: 106/106 In bytes: 158083/159000
+10.0162  0: Dropped packet (d) when q length was: 107/106 In bytes: 158147/159000
+10.0162  0: Dropped packet (d) when q length was: 106/106 In bytes: 158083/159000
+10.0162  0: Dropped packet (d) when q length was: 108/106 In bytes: 158211/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0162  0: Dropped packet (d) when q length was: 105/106 In bytes: 158019/159000
+10.0162  0: Dropped packet (d) when q length was: 106/106 In bytes: 158083/159000
+10.022755000000002/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 30.0% - tracing starts at 10.0
+10.0232  0: Dropped packet (d) when q length was: 104/106 In bytes: 157755/159000
+10.0232  0: Dropped packet (d) when q length was: 104/106 In bytes: 157755/159000
+10.0232  0: Dropped packet (d) when q length was: 106/106 In bytes: 158413/159000
+10.0232  0: Dropped packet (d) when q length was: 106/106 In bytes: 158413/159000
+10.0276  0: Dropped packet (d) when q length was: 106/106 In bytes: 158554/159000
+10.0276  0: Dropped packet (d) when q length was: 106/106 In bytes: 158554/159000
+10.030340000000002/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 40.0% - tracing starts at 10.0
+10.0378  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.0378  0: Dropped packet (d) when q length was: 104/106 In bytes: 157872/159000
+10.037925000000003/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 50.0% - tracing starts at 10.0
+10.045510000000004/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 60.0% - tracing starts at 10.0
+10.053095000000004/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 70.0% - tracing starts at 10.0
+10.060680000000005/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 80.0% - tracing starts at 10.0
+10.068265000000006/10.075849999999999 | micro-hybrid sird-ls-w4 -l: 36.0%-> simulation at 90.0% - tracing starts at 10.0
+FINISH | r2p2 micro-hybrid -l: 36.0%
