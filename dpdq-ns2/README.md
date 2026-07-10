@@ -4,6 +4,8 @@ Network simulation framework supporting multiple transport protocols: SIRD, DPDQ
 
 Built on ns-2.34 with the pFabric patch. Partially integrated with OMNET++ for INET protocol support.
 
+This ns-2 simulator is based on [epfl-dcsl/SIRD-Simulator](https://github.com/epfl-dcsl/SIRD-Simulator), with DPDQ-specific protocol, queueing, experiment, and analysis extensions.
+
 ## Quick Start
 
 ### One-script Installation
